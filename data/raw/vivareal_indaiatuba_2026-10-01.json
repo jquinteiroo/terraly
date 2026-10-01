@@ -1,0 +1,1674 @@
+{
+  "dataset": "vivareal_indaiatuba_test_v1",
+  "source": "Viva Real",
+  "source_search_url": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/",
+  "collection_date": "2026-10-01",
+  "timezone": "America/Sao_Paulo",
+  "methodology": "30 URLs previamente coletadas; cada URL visitada individualmente com Firecrawl. Nenhum crawl amplo adicional.",
+  "record_count": 30,
+  "records": [
+    {
+      "listing_id": "2906649016",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-160m2-venda-RS383391-id-2906649016/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 383.391",
+        "price_brl": 383391,
+        "area_m2": 160,
+        "price_per_m2_brl": 2396.19,
+        "condo_fee_displayed": "R$ 315",
+        "condo_fee_brl": 315,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "R$ 1.029",
+        "iptu_brl": 1029,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Park Real",
+        "address_displayed": "Rua Joaquim Gomes Meldaço",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 160m² - Jardim Park Real",
+        "description": "Terreno à venda no condomínio Jardim Park Real em Indaiatuba/SP.\n\n- Área do terreno: 160,17 m².\n- Topografia: Plano.\n\nVALORES A PARTIR DE R$ R$ 383.391,00 ,00\n\nO condomínio Park Real oferece segurança, lazer completo e uma excelente infraestrutura para você e sua família. Em processo de implementação de cerca elétrica e câmeras para maior tranquilidade de seus moradores.",
+        "condominium_name": "Jardim Park Real",
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "Plano",
+        "infrastructure": [
+          "Portaria 24h",
+          "Ronda",
+          "Salão de festas com churrasqueira",
+          "Playground",
+          "Quadra poliesportiva",
+          "Quadra de tênis",
+          "Espaço para atividades ao ar livre"
+        ],
+        "condominium_features": [],
+        "latitude": -23.093398,
+        "longitude": -47.240935,
+        "published_at": "2026-08-19",
+        "updated_at": null,
+        "photo_count": 8,
+        "frequent_uncollected_fields": [
+          "Quartos",
+          "Banheiros",
+          "Vagas",
+          "Suítes",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c3a-7171-8930-e2db8f42e29d",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-160m2-venda-RS383391-id-2906649016/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2912449474",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2912449474/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 280.000",
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Loteamento Residencial Vila Fahl",
+        "address_displayed": "Avenida Naudir Bernardinelli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Loteamento Residencial Vila Fahl",
+        "description": "Venda - Terreno no Loteamento Residencial Vila Fahl, Indaiatuba.\n\nTerreno com 150m², localizado em um loteamento tranquilo e bem estruturado. Possui acesso à água, energia, esgoto e pavimentação.\nIdeal para construção da casa dos seus sonhos em um ambiente seguro e familiar.\n\nEntre em contato para mais informações sobre essa oportunidade única!",
+        "condominium_name": "Loteamento Residencial Vila Fahl",
+        "advertiser": "Milena Ferreira De Souza Fernandes",
+        "creci": "252634-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "água",
+          "energia",
+          "esgoto",
+          "pavimentação"
+        ],
+        "condominium_features": [
+          "Piscina",
+          "Churrasqueira",
+          "Piscina para adulto"
+        ],
+        "latitude": -23.087356,
+        "longitude": -47.249173,
+        "published_at": "2026-09-16",
+        "updated_at": "2026-10-02",
+        "photo_count": 19,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c3a-75cb-9460-6c700626e868",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2912449474/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2483819402",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-panorama-bairros-indaiatuba-359m2-venda-RS200000-id-2483819402/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 200.000",
+        "price_brl": 200000,
+        "area_m2": 359,
+        "price_per_m2_brl": 557.1,
+        "condo_fee_displayed": "R$ 200",
+        "condo_fee_brl": 200,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "R$ 180",
+        "iptu_brl": 180,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Panorama",
+        "address_displayed": "Alameda Ezequiel Mantoanelli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 359m² - Jardim Panorama",
+        "description": "Ótimo terreno , excelente topográfica pronto pra construir , loteamento com casas prontas",
+        "condominium_name": "Jardim Panorama",
+        "advertiser": "Eduardo Augusto Barradas Coelho Dos Santos",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "Plano",
+        "infrastructure": [
+          "Rede de água e esgoto",
+          "Rua asfaltada",
+          "Argiloso"
+        ],
+        "condominium_features": [],
+        "latitude": -23.101965,
+        "longitude": -47.181032,
+        "published_at": "2020-05-19",
+        "updated_at": null,
+        "photo_count": 4,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c44-724c-a0d6-55253abcc655",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-panorama-bairros-indaiatuba-359m2-venda-RS200000-id-2483819402/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2912222846",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-traviu-bairros-indaiatuba-200m2-venda-RS339000-id-2912222846/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 339.000",
+        "price_brl": 339000,
+        "area_m2": 200,
+        "price_per_m2_brl": 1695,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Mato Dentro",
+        "address_displayed": "Estrada Municipal Salvador Canton Garcia",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 200m² - Chácaras Traviú",
+        "description": "Terreno plano, excelente para construção sem custo com arrimo ou terraplanagem. Condomínio prestes a ser liberado para construção O Reserva Botânica contará com uma excelente estrutura de lazer e segurança: portaria 24h, complexo aquático, quadras de tênis, beach tennis e poliesportiva, academia, salão de festas, quiosque gourmet, playground, espaço pet, fire pit e mais de 42 mil m² de áreas verdes.",
+        "condominium_name": "Reserva Botânica",
+        "advertiser": "Pleno Imóveis",
+        "creci": "21893-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "plano",
+        "infrastructure": [
+          "Portaria 24h",
+          "Complexo aquático",
+          "Quadras de tênis",
+          "Beach tennis",
+          "Quadra poliesportiva",
+          "Academia",
+          "Salão de festas",
+          "Quiosque gourmet",
+          "Playground",
+          "Espaço pet",
+          "Fire pit",
+          "Mais de 42 mil m² de áreas verdes"
+        ],
+        "condominium_features": [],
+        "latitude": -23.047992,
+        "longitude": -47.234023,
+        "published_at": "15 de setembro de 2026",
+        "updated_at": "1 dia",
+        "photo_count": 8,
+        "frequent_uncollected_fields": [
+          "Quartos",
+          "Banheiros",
+          "Vagas",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c4e-7478-9185-1b9f438cee44",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-traviu-bairros-indaiatuba-200m2-venda-RS339000-id-2912222846/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2535051378",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-vila-rubens-bairros-indaiatuba-250m2-venda-RS360000-id-2535051378/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 360.000",
+        "price_brl": 360000,
+        "area_m2": 250,
+        "price_per_m2_brl": 1440,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Vila Rubens",
+        "address_displayed": "Rua José Milanesi",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 250m² - Vila Rubens",
+        "description": "Lote/Terreno à venda, 250m² - Vila Rubens",
+        "condominium_name": null,
+        "advertiser": "We Home Imóveis",
+        "creci": "38793 J",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "Guarita blindada",
+          "Condomínio fechado"
+        ],
+        "condominium_features": [
+          "Aceita animais"
+        ],
+        "latitude": -23.072013,
+        "longitude": -47.195244,
+        "published_at": "há 5 anos",
+        "updated_at": "há 5 dias",
+        "photo_count": 12,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c67-70f4-a90c-f4e90e74b5ef",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-vila-rubens-bairros-indaiatuba-250m2-venda-RS360000-id-2535051378/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2894782716",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS210000-id-2894782716/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 210.000",
+        "price_brl": 210000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1400,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 68",
+        "iptu_brl": 68,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua Manoel Messias de Araújo",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Barnabé",
+        "description": "Terreno à Venda – Jardim Barnabé\n\nExcelente oportunidade para construir a casa dos seus sonhos!\n\nTerreno plano;\nÁrea total de 150 m²;\nÓtima localização no Jardim Barnabé;\nRegião em constante valorização;\nIdeal para construção residencial.\n\nTerreno com excelente aproveitamento, pronto para receber seu projeto e proporcionar conforto e qualidade de vida para sua família.",
+        "condominium_name": "Parque Barnabé",
+        "advertiser": "Grupo Avalia",
+        "creci": "27154-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "plano",
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.077675,
+        "longitude": -47.217923,
+        "published_at": "2026-06-24",
+        "updated_at": "2026-10-24",
+        "photo_count": 10,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "aceita animais",
+          "valor de venda",
+          "valor de IPTU",
+          "valor de condomínio"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-0c50-7567-8b8e-6ed914e9ad1e",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS210000-id-2894782716/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2490500979",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-270m2-venda-RS310000-id-2490500979/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 310.000",
+        "price_brl": 310000,
+        "area_m2": 270,
+        "price_per_m2_brl": 1148.15,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 403",
+        "iptu_brl": 403,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Paulista II",
+        "address_displayed": "Avenida Higienópolis",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 270m² - Jardim Paulista",
+        "description": "Terreno para uso residencial e/ou comercial no Jardim Paulista II, Indaiatuba/SP. Localizado na avenida Higianopolis, próximo a padarias, farmácias, loja de material de construção e comercios em geral. Bem localizado, com fácil acesso, o terreno se encontra limpo, planado e com calçada, pronto para construir. Negociação direto com o proprietário.",
+        "condominium_name": null,
+        "advertiser": "Orlando Americo Neto",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "Plano",
+        "infrastructure": [
+          "Rede de água e esgoto",
+          "Rua asfaltada"
+        ],
+        "condominium_features": [],
+        "latitude": -23.120248,
+        "longitude": -47.250295,
+        "published_at": "2020-07-24",
+        "updated_at": "2023-09-24",
+        "photo_count": 6,
+        "frequent_uncollected_fields": [
+          "Quartos",
+          "Banheiros",
+          "Vagas",
+          "Condomínio",
+          "IPTU",
+          "Valores"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-e7d0-73c4-82d7-37f8f3afcfe1",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-270m2-venda-RS310000-id-2490500979/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2427710117",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-dona-lucilla-bairros-indaiatuba-300m2-venda-RS255000-id-2427710117/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 255.000",
+        "price_brl": 255000,
+        "area_m2": 300,
+        "price_per_m2_brl": 850,
+        "condo_fee_displayed": "R$ 230",
+        "condo_fee_brl": 230,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "R$ 264",
+        "iptu_brl": 264,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Residencial Dona Lucilla",
+        "address_displayed": "Rua Maria Ines Milani Domingues",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 300m² - Jardim Residencial Dona Lucilla",
+        "description": "Vendo terreno de 300 m2 no Residencial Lucilla, lote S6 Este terreno já possui aprovação da prefeitura para construção e projeto detalhado disponível (Projeto sobrado 225m2), caso o interessado queira será cedido sem custo adicional",
+        "condominium_name": "Jardim Residencial Dona Lucilla",
+        "advertiser": "Agilson Dos Santos Jr",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.084946,
+        "longitude": -47.230842,
+        "published_at": "2018-08-05",
+        "updated_at": "2023-05-01",
+        "photo_count": 5,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-e7cd-747b-bbc8-69b9158353fc",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-dona-lucilla-bairros-indaiatuba-300m2-venda-RS255000-id-2427710117/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2914926467",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS230000-id-2914926467/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 230.000",
+        "price_brl": 230000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1533.33,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua Manoel Messias de Araújo",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Barnabé",
+        "description": "TERRENO À VENDA - PARQUE BARNABÉ / INDAIATUBA - SP. Rua Manoel Messias de Araújo. Excelente oportunidade para construir seu novo lar em uma região valorizada de Indaiatuba! Área: 150 m². Dimensões: 7,5 X 20. Escriturado e registrado em cartório. Valor de venda: R$ 230.000,00. Uma ótima opção para quem busca um terreno com documentação regularizada e espaço ideal para realizar se projeto.",
+        "condominium_name": "Parque Barnabé",
+        "advertiser": "Mantovani & Associados Negócios Imobiliários Ltda Me",
+        "creci": null,
+        "lot_dimensions": "7,5 X 20",
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.089062,
+        "longitude": -47.275105,
+        "published_at": "2026-09-29",
+        "updated_at": "2026-10-01",
+        "photo_count": 11,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "valor_venda",
+          "iptu",
+          "condominio"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-e7c9-724c-86fb-d17948db4a7b",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS230000-id-2914926467/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2841978531",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS286000-id-2841978531/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 286.000",
+        "price_brl": 286000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1906.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 792",
+        "iptu_brl": 792,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Residencial Nova Veneza",
+        "address_displayed": "Rua Dirley Pietrobon",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Jardim Residencial Nova Veneza",
+        "description": "Lote/Terreno à venda, 150m² - Jardim Residencial Nova Veneza. Este pode ser o momento ideal para você adquirir um excelente terreno e construir o imóvel dos seus sonhos. Com 150 m² (7,5 m x 20 m), o terreno está localizado em uma rua tranquila e valorizada, cercada por diversos imóveis residenciais novos, proporcionando um ambiente agradável e em constante crescimento. Além disso, conta com proximidade ao comércio local, oferecendo praticidade para o dia a dia. Se você busca um espaço ideal para construir com conforto e qualidade de vida, esta é a oportunidade certa!",
+        "condominium_name": "Jardim Residencial Nova Veneza",
+        "advertiser": "Grupo Avalia",
+        "creci": "27154-J-SP",
+        "lot_dimensions": "150 m² (7,5 m x 20 m)",
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.092243,
+        "longitude": -47.247974,
+        "published_at": "2025-10-08T00:00:00Z",
+        "updated_at": "2025-09-20T00:00:00Z",
+        "photo_count": 13,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9aa-b321-7767-b655-28f49655f40e",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS286000-id-2841978531/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2909306965",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-colonial-bairros-indaiatuba-150m2-venda-RS480000-id-2909306965/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 480.000",
+        "price_brl": 480000,
+        "area_m2": 150,
+        "price_per_m2_brl": 3200,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 108",
+        "iptu_brl": 108,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Colonial",
+        "address_displayed": "Rua José Américo Forner Soster",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Jardim Colonial",
+        "description": "Terreno com piscina à Venda no Jardim Colonial em Indaiatuba/SP\n\nÁrea do terreno: 150 m²;\nÁrea construída: 72 m²;\n\n- Piscina de 8 x 3 com sistema de aquecimento solar;\n- Portão eletrônico;\n\nCobertura com:\n- Churrasqueira;\n- 2 Banheiros;\n- Pia com fogão industrial;\n- Mesa de Sinuca.\n\nLocalizado próximo ao Burguer King e a Panobianco Academia, a 2 minutos do Parque Ecológico, 7 minutos do centro e 20 minutos do Aeroporto Internacional de Viracopos.",
+        "condominium_name": null,
+        "advertiser": "Century 21 Exclusive",
+        "creci": "24113-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.107053,
+        "longitude": -47.231955,
+        "published_at": "2026-09-01",
+        "updated_at": null,
+        "photo_count": null,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9aa-b335-752d-876b-1ec846784410",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-colonial-bairros-indaiatuba-150m2-venda-RS480000-id-2909306965/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2576219064",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-300m2-venda-RS460000-id-2576219064/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 460.000",
+        "price_brl": 460000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1533.33,
+        "condo_fee_displayed": "R$ 450",
+        "condo_fee_brl": 450,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "R$ 1.100",
+        "iptu_brl": 1100,
+        "iptu_exempt": false,
+        "neighborhood": "Jardins Di Roma",
+        "address_displayed": "Rua Senhor Eduardo dos Santos",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 300m² - Jardins di Roma",
+        "description": "TERRENOS NO CONDOMÍNIO RESIDENCIAL JARDINS DI ROMA INDAIATUBA\n\nSão lotes a partir de 300 m² e condomínio completo com segurança 24 horas e lazer.\n\nLocalizado a 2,5 km do parque ecológico, 4,5 km do centro, 3,5 do Shopping e 18,5 Km do Aeroporto Internacional de Viracopos.\n\nCondomínio com segurança 24 horas (portaria e ronda) e uma área de lazer completa piscina Adulto e Infantil, quadra de Esporte, quiosques com Churrasqueira e playground.",
+        "condominium_name": "Jardins di Roma",
+        "advertiser": "JRW Imóveis",
+        "creci": "162789-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "piscina Adulto e Infantil",
+          "quadra de Esporte",
+          "quiosques com Churrasqueira",
+          "playground"
+        ],
+        "condominium_features": [
+          "segurança 24 horas (portaria e ronda)"
+        ],
+        "latitude": -23.068861,
+        "longitude": -47.237953,
+        "published_at": "2022-08-16T00:00:00Z",
+        "updated_at": "2023-10-05T00:00:00Z",
+        "photo_count": 8,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "preço de venda",
+          "valor do condomínio",
+          "valor do IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a7-e7cf-77d3-94b0-45873858751a",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-300m2-venda-RS460000-id-2576219064/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2893835282",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-indaiatuba-bairros-indaiatuba-166m2-venda-RS209000-id-2893835282/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 209.000",
+        "price_brl": 209000,
+        "area_m2": 166,
+        "price_per_m2_brl": 1259.04,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 49",
+        "iptu_brl": 49,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim das Maritacas",
+        "address_displayed": "Rua Alcides Pazin",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 166m² - Indaiatuba",
+        "description": "Terreno à venda no bairro Jardim das Maritacas em Indaiatuba/SP.\n\n- Área de terreno: 165,74 m².\n- Ótima topografia.\n- Localização excelente.\n- Bairro planejado.\n- 20 minutos do Aeroporto Internacional de Viracopos.\n\n*PROJETO APROVADO CONFORME FOTOS*",
+        "condominium_name": null,
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "Ótima topografia",
+        "infrastructure": [
+          "Comércios",
+          "Escolas",
+          "Posto de saúde",
+          "Mercados"
+        ],
+        "condominium_features": [],
+        "latitude": -23.121844,
+        "longitude": -47.252841,
+        "published_at": "2026-06-19",
+        "updated_at": "2026-10-24",
+        "photo_count": 13,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "valor",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6dcc-757d-bb5e-35cbda1ed1e8",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-indaiatuba-bairros-indaiatuba-166m2-venda-RS209000-id-2893835282/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2910244351",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS180000-id-2910244351/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 180.000",
+        "price_brl": 180000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1200,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 78",
+        "iptu_brl": 78,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua Omar Bull",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Barnabé",
+        "description": "Terreno à venda no bairro Parque Barnabé em Indaiatuba/SP.\n- Área de terreno: 150 m².\n- Excelente topografia.\n- No Smart city.\nEntre em contato conosco e agende uma visita!",
+        "condominium_name": null,
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.089062,
+        "longitude": -47.275105,
+        "published_at": "2026-09-05",
+        "updated_at": "2023-10-02",
+        "photo_count": 8,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "valor_venda",
+          "iptu"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6dd7-702f-819e-b022b457532c",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS180000-id-2910244351/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2888710596",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888710596/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 280.000",
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Loteamento Residencial Vila Fahl",
+        "address_displayed": "Avenida Naudir Bernardinelli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Loteamento Residencial Vila Fahl",
+        "description": "Terreno à venda no Loteamento Residencial Vila Fahl, Indaiatuba.\n\nCom área útil de 150m², este terreno possui infraestrutura completa de água, energia, esgoto e pavimentação. Ideal para construir a casa dos seus sonhos! Localizado em um bairro tranquilo e bem estruturado, o terreno oferece ainda uma área de lazer perfeita para momentos relaxantes em família.\n\nNão perca essa oportunidade de investir em um local privilegiado! Entre em contato para mais informações.",
+        "condominium_name": "Loteamento Residencial Vila Fahl",
+        "advertiser": "Patricia Cunha - Pleno Imóveis",
+        "creci": "234652-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "água",
+          "energia",
+          "esgoto",
+          "pavimentação"
+        ],
+        "condominium_features": [
+          "piscina",
+          "churrasqueira",
+          "piscina para adulto"
+        ],
+        "latitude": -23.087356,
+        "longitude": -47.249173,
+        "published_at": "2026-05-25",
+        "updated_at": "2026-10-04",
+        "photo_count": 19,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6dd9-7778-8b8f-13298a59d3de",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888710596/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2910727436",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS265000-id-2910727436/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 265.000",
+        "price_brl": 265000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1766.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 80",
+        "iptu_brl": 80,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Bom Sucesso",
+        "address_displayed": "Rua Ana Domingas Sonssim Barzan",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Jardim Bom Sucesso",
+        "description": "TERRENO À VENDA JARDIM BOM SUCESSO | INDAIATUBA\n\nExcelente oportunidade para construir sua casa em um bairro promissor e em valorização, com vizinhança formada por casas de ótimo padrão.\n\nTerreno com 150 m²\n\nBairro com infraestrutura completa, fácil acesso e comércio próximo, oferecendo praticidade para o dia a dia.\n\nA apenas 5 minutos do Parque Ecológico, em uma região que vem se destacando pelo crescimento e valorização.\n\nIdeal para quem busca qualidade de vida, boa localização e excelente potencial de valorização.",
+        "condominium_name": null,
+        "advertiser": "Maxximus Imóveis",
+        "creci": "41771-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "infraestrutura completa",
+          "fácil acesso",
+          "comércio próximo"
+        ],
+        "condominium_features": [],
+        "latitude": -23.109418,
+        "longitude": -47.261406,
+        "published_at": "2026-09-08",
+        "updated_at": "2026-09-29",
+        "photo_count": 8,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "Venda",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6dd8-7188-a994-6ffaaca0260e",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS265000-id-2910727436/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2912454824",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-300m2-venda-RS394000-id-2912454824/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 394.000",
+        "price_brl": 394000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1313.33,
+        "condo_fee_displayed": "R$ 383",
+        "condo_fee_brl": 383,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Chácara Areal",
+        "address_displayed": "Rua Ângelo Petrilli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 300m² - Altos da Bela Vista",
+        "description": "\"Excelente Oportunidade no Condomínio Belmonte em Indaiatuba Se você está em busca do lugar perfeito para construir a casa dos seus sonhos ou realizar um investimento sólido, este terreno de 300m² no Condomínio Belmonte é a escolha ideal. Com topografia privilegiada que favorece os mais variados projetos arquitetônicos, o lote oferece o espaço perfeito para quem prioriza conforto, privacidade e qualidade de vida. O residencial se destaca por sua infraestrutura moderna, fiação subterrânea que preserva a harmonia visual, segurança com portaria vinte e quatro horas e uma área de lazer completa para toda a família. Além do padrão exclusivo do condomínio, a localização é um dos grandes diferenciais. O imóvel está estrategicamente posicionado em Indaiatuba, proporcionando acesso rápido e fácil a tudo o que você precisa no dia a dia. Para as compras e conveniência, a região conta com excelentes opções de supermercados como o Pão de Açúcar, o Carrefour e o Oba Hortifruti. A saúde também é um ponto forte, estando a poucos minutos de hospitais de referência na cidade, como o Hospital Augusto de Oliveira Camargo e o Hospital Santa Ignês. O condomínio ainda oferece facilidade de acesso ao icônico Parque Ecológico, centro financeiro, colégios de alto padrão e às principais saídas para a Rodovia Santos Dumont, garantindo praticidade para quem precisa se deslocar para Campinas ou para o Aeroporto Internacional de Viracopos. Agende sua visita e venha conhecer o cenário do seu próximo capítulo.\"",
+        "condominium_name": "Condomínio Belmonte",
+        "advertiser": "Milena Ferreira De Souza Fernandes",
+        "creci": "252634-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "Rua asfaltada"
+        ],
+        "condominium_features": [
+          "Segurança com portaria 24 horas",
+          "Áreas de lazer completas"
+        ],
+        "latitude": -23.076204,
+        "longitude": -47.221099,
+        "published_at": "16 de setembro de 2026",
+        "updated_at": "2026-09-30T00:00:00Z",
+        "photo_count": 18,
+        "frequent_uncollected_fields": [
+          "Vagas",
+          "Quartos",
+          "Banheiros",
+          "Valor de venda",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6ddb-7036-ab37-b866b8dc3b76",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-300m2-venda-RS394000-id-2912454824/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2912453130",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-300m2-venda-RS345000-id-2912453130/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 345.000",
+        "price_brl": 345000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1150,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Altos da Bela Vista",
+        "address_displayed": "Rua João Otto Steffen",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 300m² - Altos da Bela Vista",
+        "description": "Terreno à venda no condomínio Altos da Bela Vista, em Indaiatuba – SP.\nCom 300m² de área total, este terreno possui topografia plana e medidas ideais para construção: 12 metros de largura por 25 metros de comprimento. Já conta com pavimentação e está pronto para receber o projeto da casa dos seus sonhos.\nLocalizado em um dos condomínios mais bem posicionados da cidade, fica a apenas 4 minutos do Parque Ecológico, Colégio Objetivo e Supermercado Sumerbol, oferecendo praticidade e qualidade de vida para toda a família.\nAproveite essa excelente oportunidade de morar em uma região valorizada e com fácil acesso a tudo o que você precisa.\nEntre em contato para mais informações e agende sua visita!",
+        "condominium_name": "Altos da Bela Vista",
+        "advertiser": "Milena Ferreira De Souza Fernandes",
+        "creci": "252634-F-SP",
+        "lot_dimensions": null,
+        "frontage": "12 metros de largura por 25 metros de comprimento",
+        "topography": "plano",
+        "infrastructure": [
+          "pavimentação"
+        ],
+        "condominium_features": [],
+        "latitude": -23.065256,
+        "longitude": -47.244427,
+        "published_at": "2026-09-16T00:00:00Z",
+        "updated_at": "2026-09-30T00:00:00Z",
+        "photo_count": 15,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a8-6f5b-741a-8677-65a71844b8ea",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-300m2-venda-RS345000-id-2912453130/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2698967597",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-reserva-da-mata-bairros-indaiatuba-300m2-venda-RS580000-id-2698967597/?source=showcase%2Crp",
+      "collected_at": "2026-10-01T22:42:24-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 580.000",
+        "price_brl": 580000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1933.33,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Chácara Areal",
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 300m² - Jardim Residencial Reserva da Mata",
+        "description": "Excelente Terreno à venda no Condomínio Reserva da Mata - Indaiatuba/SP. Área total: 300 m² Este terreno é uma excelente oportunidade, oferecendo ampla área e uma localização privilegiada, situado a apenas 800 metros do Parque Ecológico e próximo ao supermercado Sumerbol. Sua proximidade com o parque proporciona acesso a espaços verdes e recreativos, enquanto a conveniência de ter um supermercado nas proximidades oferece comodidade para as necessidades diárias. Com essa localização estratégica, o terreno apresenta potencial para diversos tipos de uso, desde residencial até comercial, tornando-o uma opção atrativa para investidores ou para quem busca construir a sua residência dos sonhos em um ambiente tranquilo e acessível.",
+        "condominium_name": "Jardim Residencial Reserva da Mata",
+        "advertiser": "Valentina Caran Imoveis Ltda",
+        "creci": "05622-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.072257,
+        "longitude": -47.221831,
+        "published_at": "16 de março de 2024",
+        "updated_at": "3 dias atrás",
+        "photo_count": 10,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-14ac-7136-aade-208161a3c893",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-reserva-da-mata-bairros-indaiatuba-300m2-venda-RS580000-id-2698967597/?source=showcase%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2900477361",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS218000-id-2900477361/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 218.000",
+        "price_brl": 218000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1453.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Casablanca",
+        "address_displayed": "Rua Zídio Franco Cipó",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Jardim Casablanca",
+        "description": "Terreno à Venda – Jardim Casablanca, Indaiatuba/SP Excelente oportunidade para quem deseja investir ou construir em um dos bairros que mais cresc em em Indaiatuba! O Jardim Casablanca é uma região nova e em plena expansão, com fácil acesso a comércios, escolas e principais vias da cidade — ideal para quem busca qualidade de vida e valorização garantida. Características do terreno: Área total de 150 m² Terreno plano, pronto para construir Localizado em bairro novo, com infraestrutura em crescimento Documentação em ordem Diferenciais: ✔️ Região com alta valorização imobiliária ✔️ Bairro planejado e com ótimo potencial de desenvolvimento ✔️ Ideal para construção residencial ou investimento de retorno rápido ✔️ Fácil acesso ao centro e principais rodovias Por que investir em Indaiatuba? A cidade é destaque entre as mais valorizadas do interior paulista, com crescimento urbano contínuo, segurança, infraestrutura moderna e ótima qualidade de vida — fatores que atraem cada vez mais investidores e famílias.",
+        "condominium_name": null,
+        "advertiser": "Pleno Imóveis",
+        "creci": "21893-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "plano",
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.064166,
+        "longitude": -47.173325,
+        "published_at": "2026-07-22",
+        "updated_at": "2026-09-03",
+        "photo_count": 3,
+        "frequent_uncollected_fields": [
+          "Vagas",
+          "Banheiros",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-14ac-752a-929c-78a36b94c207",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS218000-id-2900477361/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2900482669",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900482669/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 280.000",
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Loteamento Residencial Vila Fahl",
+        "address_displayed": "Avenida Naudir Bernardinelli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Loteamento Residencial Vila Fahl",
+        "description": "\"Terreno amplo à venda no Loteamento Residencial Vila Fahl, em Indaiatuba. Com uma área útil de 150m², este terreno conta com todas as infraestruturas necessárias, como água, energia, esgoto e pavimentação. Localizado em uma região tranquila e residencial, este terreno é ideal para construir a casa dos seus sonhos. Aproveite a oportunidade de adquirir um terreno com excelente localização e acesso fácil a diversos pontos da cidade. Entre em contato conosco para mais informações e agende uma visita para conhecer esse terreno incrível. Aproveite essa chance única de investimento!\"",
+        "condominium_name": "Loteamento Residencial Vila Fahl",
+        "advertiser": "Pleno Imóveis",
+        "creci": "21893-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "água",
+          "energia",
+          "esgoto",
+          "pavimentação"
+        ],
+        "condominium_features": [
+          "Piscina",
+          "Salão de festas",
+          "Playground"
+        ],
+        "latitude": -23.087356,
+        "longitude": -47.249173,
+        "published_at": "2026-07-22",
+        "updated_at": "2026-09-22",
+        "photo_count": 19,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "condomínio",
+          "IPTU",
+          "valor"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-14b2-7456-ab31-92f851155b41",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900482669/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2906791874",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-299m2-venda-RS394000-id-2906791874/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 394.000",
+        "price_brl": 394000,
+        "area_m2": 299,
+        "price_per_m2_brl": 1317.73,
+        "condo_fee_displayed": "R$ 387",
+        "condo_fee_brl": 387,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Chácara Areal",
+        "address_displayed": "Rua Ângelo Petrilli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 299m² - Altos da Bela Vista",
+        "description": "Excelente Oportunidade no Condomínio Belmonte em Indaiatuba Se você está em busca do lugar perfeito para construir a casa dos seus sonhos ou realizar um investimento sólido, este terreno de 300m² no Condomínio Belmonte é a escolha ideal. Com topografia privilegiada que favorece os mais variados projetos arquitetônicos, o lote oferece o espaço perfeito para quem prioriza conforto, privacidade e qualidade de vida. O residencial se destaca por sua infraestrutura moderna, fiação subterrânea que preserva a harmonia visual, segurança com portaria vinte e quatro horas e uma área de lazer completa para toda a família. Além do padrão exclusivo do condomínio, a localização é um dos grandes diferenciais. O imóvel está estrategicamente posicionado em Indaiatuba, proporcionando acesso rápido e fácil a tudo o que você precisa no dia a dia. Para as compras e conveniência, a região conta com excelentes opções de supermercados como o Pão de Açúcar, o Carrefour e o Oba Hortifruti. A saúde também é um ponto forte, estando a poucos minutos de hospitais de referência na cidade, como o Hospital Augusto de Oliveira Camargo e o Hospital Santa Ignês. O condomínio ainda oferece facilidade de acesso ao icônico Parque Ecológico, centro financeiro, colégios de alto padrão e às principais saídas para a Rodovia Santos Dumont, garantindo praticidade para quem precisa se deslocar para Campinas ou para o Aeroporto Internacional de Viracopos. Agende sua visita e venha conhecer o cenário do seu próximo capítulo.",
+        "condominium_name": "Condomínio Belmonte",
+        "advertiser": "Pleno Imóveis - Interior",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "rua asfaltada"
+        ],
+        "condominium_features": [
+          "piscina",
+          "salão de festas"
+        ],
+        "latitude": -23.076204,
+        "longitude": -47.221099,
+        "published_at": "há 1 mês",
+        "updated_at": "há 20 horas",
+        "photo_count": 18,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9aa-b34e-74ac-b43b-ab94a4b6dc9c",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-299m2-venda-RS394000-id-2906791874/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2895157292",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS169800-id-2895157292/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 169.800",
+        "price_brl": 169800,
+        "area_m2": 150,
+        "price_per_m2_brl": 1132,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 76",
+        "iptu_brl": 76,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua Victor Battisti Wanderley",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Barnabé",
+        "description": "Terreno residencial à venda no bairro Smart City em Indaiatuba/SP.\n\n- Área de terreno: 150 m².\n- Localizado em bairro com grande valorização.\n- Excelente topografia.\n- Oportunidade para quem busca morar em uma região em constante crescimento,\n- Próxima ao Parque Industrial e com fácil acesso aos principais pontos da cidade.",
+        "condominium_name": "Parque Barnabé",
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "Excelente topografia.",
+        "infrastructure": [],
+        "condominium_features": [
+          "TV a cabo"
+        ],
+        "latitude": -23.077675,
+        "longitude": -47.217923,
+        "published_at": "2026-06-25T00:00:00Z",
+        "updated_at": "2026-09-25T00:00:00Z",
+        "photo_count": 6,
+        "frequent_uncollected_fields": [
+          "Quartos",
+          "Banheiros",
+          "Vagas",
+          "Suítes",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-14af-7149-88f6-a4fc34968e90",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS169800-id-2895157292/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2785853038",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-150m2-venda-RS180000-id-2785853038/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 180.000",
+        "price_brl": 180000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1200,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 60",
+        "iptu_brl": 60,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Campo Bonito",
+        "address_displayed": "Rua Irmã Maria Angélica",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Campo Bonito",
+        "description": "Lote/Terreno à venda, 150m² - Parque Campo Bonito\n\n(Código do anunciante: TE01895 | Código no Viva Real: 2785853038)\n\nTerreno à venda, 150 m² Smart City - Indaiatuba/SP\n\nLoteamento com ótima localização com acesso fácil à rodovia\nÓtima infraestrutura completa de lazer\ncx d´água própria\nR$ 180.000 à vista\nOU\nR$ 165.000 + 44 X R$ 585,00 + Igpm anual",
+        "condominium_name": null,
+        "advertiser": "Portal Imóveis",
+        "creci": "63300-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "ótima localização com acesso fácil à rodovia",
+          "ótima infraestrutura completa de lazer",
+          "cx d'água própria"
+        ],
+        "condominium_features": null,
+        "latitude": -23.093366,
+        "longitude": -47.278175,
+        "published_at": "2025-03-10T00:00:00Z",
+        "updated_at": "2025-10-01T00:00:00Z",
+        "photo_count": 3,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9aa-b34d-75a4-a4d0-e806d0e675cc",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-150m2-venda-RS180000-id-2785853038/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2909306541",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-sabias-bairros-indaiatuba-150m2-venda-RS270000-id-2909306541/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 270.000",
+        "price_brl": 270000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1800,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 91",
+        "iptu_brl": 91,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Residencial Sabiás",
+        "address_displayed": "Rua Maria Apparecida Vieira Rodrigues",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Residencial Sabiás",
+        "description": "Terreno à venda - Parque Residencial Sabiás - Indaiatuba/SP\n\nÁrea do terreno 150m²\n\nLote plano com topografia excelente, murado, cerca elétrica e portão!\n\nO Jardim dos Sabiás é um loteamento residencial aberto com lotes a partir de 150m².\n\nEm excelente localização, próximo a Avenida General Motors, ao lado do Distrito Industrial Europark e das fábricas da John Deere e Deere Hitachi.",
+        "condominium_name": "Parque Residencial Sabiás",
+        "advertiser": "Century 21 Exclusive",
+        "creci": "24113-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "plano",
+        "infrastructure": [
+          "murado",
+          "cerca elétrica",
+          "portão"
+        ],
+        "condominium_features": [],
+        "latitude": -23.074616,
+        "longitude": -47.20512,
+        "published_at": "2026-09-01",
+        "updated_at": "2026-09-22",
+        "photo_count": 10,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "suítes",
+          "valor_venda",
+          "condominio",
+          "iptu"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-95c3-7615-b595-31eef0c24e63",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-sabias-bairros-indaiatuba-150m2-venda-RS270000-id-2909306541/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2721567213",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-residencial-milano-bairros-indaiatuba-320m2-venda-RS465000-id-2721567213/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 465.000",
+        "price_brl": 465000,
+        "area_m2": 320,
+        "price_per_m2_brl": 1453.13,
+        "condo_fee_displayed": "R$ 400",
+        "condo_fee_brl": 400,
+        "condo_fee_exempt": false,
+        "iptu_displayed": "R$ 115",
+        "iptu_brl": 115,
+        "iptu_exempt": false,
+        "neighborhood": "Residencial Milano",
+        "address_displayed": "Rua Senhor José Eduardo Donofrio",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 320m² - Residencial Milano",
+        "description": "Terreno Condomínio Milano/Indaiatuba São 320,00m ² Pronto para construir Condomínio com infraestrutura completa",
+        "condominium_name": "Residencial Milano",
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "Playground",
+          "Portaria 24h",
+          "Academia"
+        ],
+        "condominium_features": [],
+        "latitude": -23.056271,
+        "longitude": -47.233742,
+        "published_at": "2024-06-13",
+        "updated_at": "2024-06-13T00:00:00Z",
+        "photo_count": 26,
+        "frequent_uncollected_fields": [
+          "Quartos",
+          "Banheiros",
+          "Vagas",
+          "Suítes",
+          "Venda",
+          "Condomínio",
+          "IPTU"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-960a-732c-bb78-7541e3504e6b",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-residencial-milano-bairros-indaiatuba-320m2-venda-RS465000-id-2721567213/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2900485491",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-traviu-bairros-indaiatuba-201m2-venda-RS260000-id-2900485491/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 260.000",
+        "price_brl": 260000,
+        "area_m2": 201,
+        "price_per_m2_brl": 1293.53,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 57",
+        "iptu_brl": 57,
+        "iptu_exempt": false,
+        "neighborhood": "Mato Dentro",
+        "address_displayed": "Estrada Municipal Salvador Canton Garcia",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 201m² - Chácaras Traviú",
+        "description": "Terreno à Venda no Condomínio Reserva Botânica – Indaiatuba/SP\nExcelente oportunidade para construir sua casa dos sonhos em um dos condomínios mais desejados de Indaiatuba! Terreno de esquina, localizado próximo à portaria e à área de lazer do condomínio. Área total: 201,86 m² O Reserva Botânica é conhecido por seu ambiente tranquilo, com amplas áreas verdes, paisagismo exuberante e infraestrutura completa para quem busca qualidade de vida, segurança e contato com a natureza. Escritura pronta para transferência. Um lote com excelente localização dentro do condomínio — perfeito para quem quer unir conforto, natureza e praticidade no melhor de Indaiatuba.",
+        "condominium_name": "Reserva Botânica",
+        "advertiser": "Pleno Imóveis",
+        "creci": "21893-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "Playground",
+          "Quadra poliesportiva",
+          "Área de lazer"
+        ],
+        "condominium_features": [],
+        "latitude": -23.04716,
+        "longitude": -47.233065,
+        "published_at": "2026-07-22",
+        "updated_at": "2026-09-20",
+        "photo_count": 8,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-959a-711d-9076-51971623ae2d",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-traviu-bairros-indaiatuba-201m2-venda-RS260000-id-2900485491/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2888705229",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888705229/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 280.000",
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "isento",
+        "iptu_brl": null,
+        "iptu_exempt": true,
+        "neighborhood": "Loteamento Residencial Vila Fahl",
+        "address_displayed": "Avenida Naudir Bernardinelli",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Loteamento Residencial Vila Fahl",
+        "description": "Terreno à venda no Loteamento Residencial Vila Fahl, em Indaiatuba. Com uma área útil de 150m², este terreno conta com todos os serviços essenciais, como água, energia, esgoto e pavimentação. Além disso, está localizado em um bairro tranquilo e com fácil acesso a diversos pontos da cidade. Aproveite essa oportunidade para construir a casa dos seus sonhos em um lugar seguro e com uma excelente infraestrutura. Entre em contato para mais informações e agende uma visita. Venha conferir essa excelente opção de investimento!",
+        "condominium_name": "Loteamento Residencial Vila Fahl",
+        "advertiser": "Patricia Cunha - Pleno Imóveis",
+        "creci": "234652-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "água",
+          "energia",
+          "esgoto",
+          "pavimentação"
+        ],
+        "condominium_features": [
+          "Piscina",
+          "Playground",
+          "Salão de festas"
+        ],
+        "latitude": -23.092709,
+        "longitude": -47.250418,
+        "published_at": "2026-05-25",
+        "updated_at": "2026-05-27",
+        "photo_count": 20,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-958c-764d-9b21-b60db1b37722",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888705229/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2760622448",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS255000-id-2760622448/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 255.000",
+        "price_brl": 255000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1700,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 875",
+        "iptu_brl": 875,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Residencial Nova Veneza",
+        "address_displayed": "Rua Manoel Gonçalves",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Jardim Residencial Nova Veneza",
+        "description": "Lote/Terreno à venda, 150m² - Jardim Residencial Nova Veneza",
+        "condominium_name": null,
+        "advertiser": "Visão Imóveis",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": -23.092243,
+        "longitude": -47.247974,
+        "published_at": "1 ano",
+        "updated_at": "3 dias",
+        "photo_count": 6,
+        "frequent_uncollected_fields": []
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9aa-b320-7462-b27c-9ff452d4e7ed",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS255000-id-2760622448/?source=ranking%2Crp",
+        "warning": null,
+        "error": null
+      }
+    },
+    {
+      "listing_id": "2912453129",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bela-vista-bairros-indaiatuba-305m2-venda-RS390000-id-2912453129/?source=ranking%2Crp",
+      "collected_at": "2026-10-01T22:43:21-03:00",
+      "source_list_page": {
+        "price_displayed": "R$ 390.000",
+        "price_brl": 390000,
+        "area_m2": 305,
+        "price_per_m2_brl": 1278.69,
+        "condo_fee_displayed": "isento",
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": "R$ 107",
+        "iptu_brl": 107,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Bela Vista",
+        "address_displayed": "Rua Pérsio Sampaio",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 305m² - Jardim Bela Vista",
+        "description": "Venda de terreno no Jardim Bela Vista, Indaiatuba.\n\nLocalizado em área residencial o terreno possui 305.75m² de área útil, cercado e com topografia aclive. Conta com acesso à água, energia, esgoto e pavimentação. Bairro de fácil acesso com vista para Mata preservada.\nPerfeito para construir a casa dos seus sonhos em um bairro tranquilo e bem estruturado.\n\nEntre em contato para mais informações!",
+        "condominium_name": null,
+        "advertiser": "Milena Ferreira De Souza Fernandes",
+        "creci": "252634-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "aclive",
+        "infrastructure": [
+          "água",
+          "energia",
+          "esgoto",
+          "pavimentação"
+        ],
+        "condominium_features": [],
+        "latitude": -23.069682,
+        "longitude": -47.235773,
+        "published_at": "2026-09-16T00:00:00Z",
+        "updated_at": "2026-09-30T00:00:00Z",
+        "photo_count": 5,
+        "frequent_uncollected_fields": [
+          "quartos",
+          "banheiros",
+          "vagas",
+          "condomínio",
+          "iptu",
+          "valor"
+        ]
+      },
+      "firecrawl_scrape": {
+        "success": true,
+        "status_code": 200,
+        "scrape_id": "01a0f9a9-9714-7583-9186-17f5bd80043d",
+        "source_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bela-vista-bairros-indaiatuba-305m2-venda-RS390000-id-2912453129/?source=ranking%2Crp",
+        "warning": "This scrape job was throttled at your current concurrency limit. If you'd like to scrape faster, you can upgrade your plan.",
+        "error": null
+      }
+    }
+  ]
+}
+
