@@ -181,3 +181,42 @@ Além disso, a viabilidade comercial do Terraly depende de resolver de forma sus
 O Terraly é uma ferramenta experimental de apoio à análise e **não constitui recomendação de investimento, avaliação imobiliária, parecer jurídico, projeto arquitetônico ou laudo de engenharia**.
 
 Qualquer decisão real de aquisição ou construção deve ser precedida das verificações técnicas, documentais, urbanísticas, financeiras e jurídicas aplicáveis.
+
+
+## Dashboard de exploração
+
+O repositório também possui uma interface web estática para explorar o primeiro dataset:
+
+- resumo da amostra;
+- filtros por localização, preço e topografia;
+- mapa dos anúncios;
+- gráfico de área × preço por m²;
+- sinalização conservadora de possíveis duplicidades;
+- destaque de extremos estatísticos para investigação;
+- painel detalhado de cada anúncio.
+
+Arquivos da interface:
+
+- `index.html`
+- `styles.css`
+- `app.js`
+
+### Rodar localmente
+
+Como a interface lê o JSON com `fetch()`, abra o projeto por um servidor HTTP em vez de abrir o `index.html` diretamente.
+
+Exemplo:
+
+```bash
+python -m http.server 8000
+```
+
+Depois acesse:
+
+```text
+http://localhost:8000
+```
+
+A tela também pode ser publicada diretamente com GitHub Pages usando a raiz da branch `master`.
+
+> Importante: os destaques da interface são sinais exploratórios. A tela não classifica terrenos como bons investimentos e não substitui validação urbanística, jurídica, técnica ou financeira.
