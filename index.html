@@ -38,27 +38,199 @@
       <section class="hero">
         <div>
           <div class="eyebrow">RADAR DE TERRENOS · INDAIATUBA/SP</div>
-          <h1>Encontre sinais que merecem <span>investigação.</span></h1>
+          <h1>Encontre terrenos que combinam com <span>seu perfil.</span></h1>
           <p>
-            Visualização do primeiro experimento de dados do Terraly. Os indicadores abaixo
-            representam anúncios observados — não recomendação de compra, preço justo ou garantia de disponibilidade.
+            Defina orçamento, metragem e características desejadas. O Terraly filtra apenas os dados realmente observados
+            na base e mostra o que ainda precisa ser validado antes de qualquer decisão.
           </p>
         </div>
         <div class="hero-actions">
           <a class="button secondary" href="./data/processed/vivareal_indaiatuba_2026-10-01_quality_report.md" target="_blank" rel="noreferrer">Ver relatório</a>
-          <a class="button primary" href="./data/processed/vivareal_indaiatuba_2026-10-01.csv" target="_blank" rel="noreferrer">Abrir CSV</a>
+          <a class="button primary" href="#journey">Montar meu perfil</a>
         </div>
       </section>
 
       <section class="warning-card" aria-label="Aviso de uso">
         <div class="warning-icon">i</div>
         <div>
-          <strong>Leitura correta dos dados</strong>
+          <strong>Pré-triagem, não recomendação</strong>
           <p>
-            “Candidato à investigação” significa apenas que o anúncio está estatisticamente distante da mediana da amostra.
-            Coordenadas podem ser aproximadas, anúncios diferentes podem representar o mesmo terreno e preço anunciado não é preço de transação.
+            Os filtros trabalham sobre anúncios observados. Coordenadas podem ser aproximadas, anúncios diferentes podem representar
+            o mesmo terreno e preço anunciado não é preço de transação.
           </p>
         </div>
+      </section>
+
+      <section class="journey-panel" id="journey">
+        <div class="journey-intro">
+          <div>
+            <span class="section-kicker">Sua jornada</span>
+            <h2>Que terreno você está procurando?</h2>
+            <p>Preencha só o que for importante para você. Campos em branco não restringem a busca.</p>
+          </div>
+          <button class="text-button" id="journey-reset" type="button">Começar de novo</button>
+        </div>
+
+        <div class="journey-progress" aria-label="Etapas do filtro">
+          <button type="button" class="journey-dot active" data-step-target="1"><span>1</span> Orçamento</button>
+          <button type="button" class="journey-dot" data-step-target="2"><span>2</span> Terreno</button>
+          <button type="button" class="journey-dot" data-step-target="3"><span>3</span> Características</button>
+          <button type="button" class="journey-dot" data-step-target="4"><span>4</span> Qualidade</button>
+        </div>
+
+        <div class="journey-body">
+          <section class="journey-step active" data-step="1">
+            <div class="step-copy">
+              <span class="step-number">01</span>
+              <div>
+                <h3>Quanto você quer investir?</h3>
+                <p>Use a faixa total do terreno. Taxa de condomínio e IPTU são filtros opcionais.</p>
+              </div>
+            </div>
+
+            <div class="step-fields grid-3">
+              <label class="field">
+                <span>Preço mínimo</span>
+                <input id="journey-price-min" type="number" min="0" step="10000" placeholder="Ex.: 180000" />
+              </label>
+              <label class="field">
+                <span>Preço máximo</span>
+                <input id="journey-price-max" type="number" min="0" step="10000" placeholder="Ex.: 350000" />
+              </label>
+              <label class="field">
+                <span>R$/m² máximo</span>
+                <input id="journey-ppm2-max" type="number" min="0" step="50" placeholder="Ex.: 1600" />
+              </label>
+              <label class="field">
+                <span>Condomínio máximo</span>
+                <input id="journey-condo-max" type="number" min="0" step="50" placeholder="Opcional" />
+              </label>
+              <label class="field">
+                <span>IPTU máximo informado</span>
+                <input id="journey-iptu-max" type="number" min="0" step="50" placeholder="Opcional" />
+              </label>
+            </div>
+          </section>
+
+          <section class="journey-step" data-step="2">
+            <div class="step-copy">
+              <span class="step-number">02</span>
+              <div>
+                <h3>Qual tamanho de terreno faz sentido?</h3>
+                <p>Área e condomínio são informações presentes na nossa coleta atual. Testada ainda aparece em poucos anúncios.</p>
+              </div>
+            </div>
+
+            <div class="step-fields grid-3">
+              <label class="field">
+                <span>Área mínima</span>
+                <input id="journey-area-min" type="number" min="0" step="10" placeholder="Ex.: 150" />
+              </label>
+              <label class="field">
+                <span>Área máxima</span>
+                <input id="journey-area-max" type="number" min="0" step="10" placeholder="Ex.: 350" />
+              </label>
+              <label class="field">
+                <span>Condomínio</span>
+                <select id="journey-condo-type">
+                  <option value="">Tanto faz</option>
+                  <option value="with">Quero condomínio identificado</option>
+                  <option value="without">Prefiro sem condomínio identificado</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Região / bairro / rua</span>
+                <input id="journey-location" type="search" placeholder="Ex.: Parque Barnabé" autocomplete="off" />
+              </label>
+            </div>
+          </section>
+
+          <section class="journey-step" data-step="3">
+            <div class="step-copy">
+              <span class="step-number">03</span>
+              <div>
+                <h3>Quais características importam?</h3>
+                <p>Selecionamos somente itens que aparecem explicitamente nas descrições coletadas.</p>
+              </div>
+            </div>
+
+            <div class="step-fields grid-3">
+              <label class="field">
+                <span>Topografia</span>
+                <select id="journey-topography">
+                  <option value="">Tanto faz</option>
+                  <option value="plano">Plano</option>
+                  <option value="aclive">Aclive</option>
+                  <option value="declive">Declive</option>
+                  <option value="known">Somente quando informada</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="choice-block">
+              <span class="choice-label">Infraestrutura mencionada</span>
+              <div class="choice-grid" id="infrastructure-choices">
+                <label class="choice-chip"><input type="checkbox" value="agua" /><span>Água</span></label>
+                <label class="choice-chip"><input type="checkbox" value="esgoto" /><span>Esgoto</span></label>
+                <label class="choice-chip"><input type="checkbox" value="paviment" /><span>Pavimentação</span></label>
+                <label class="choice-chip"><input type="checkbox" value="portaria" /><span>Portaria</span></label>
+                <label class="choice-chip"><input type="checkbox" value="segur" /><span>Segurança</span></label>
+                <label class="choice-chip"><input type="checkbox" value="lazer" /><span>Lazer</span></label>
+              </div>
+            </div>
+          </section>
+
+          <section class="journey-step" data-step="4">
+            <div class="step-copy">
+              <span class="step-number">04</span>
+              <div>
+                <h3>Quanto rigor você quer na triagem?</h3>
+                <p>Esses filtros não dizem que um negócio é bom; eles ajudam a reduzir ruído da base.</p>
+              </div>
+            </div>
+
+            <div class="quality-options">
+              <label class="quality-option">
+                <input id="journey-hide-duplicates" type="checkbox" />
+                <span>
+                  <strong>Ocultar possíveis duplicidades</strong>
+                  <small>Remove da visualização anúncios sinalizados como possíveis repetições.</small>
+                </span>
+              </label>
+              <label class="quality-option">
+                <input id="journey-require-topography" type="checkbox" />
+                <span>
+                  <strong>Exigir topografia informada</strong>
+                  <small>Mostra somente anúncios que mencionam explicitamente a topografia.</small>
+                </span>
+              </label>
+              <label class="quality-option">
+                <input id="journey-only-candidates" type="checkbox" />
+                <span>
+                  <strong>Mostrar apenas extremos de R$/m²</strong>
+                  <small>Triagem estatística experimental; não representa “oportunidade confirmada”.</small>
+                </span>
+              </label>
+            </div>
+          </section>
+        </div>
+
+        <div class="journey-footer">
+          <div class="journey-summary" id="journey-summary">Nenhum filtro aplicado ainda.</div>
+          <div class="journey-actions">
+            <button class="button secondary journey-nav" id="journey-back" type="button" disabled>Voltar</button>
+            <button class="button primary journey-nav" id="journey-next" type="button">Próximo</button>
+            <button class="button primary journey-nav hidden" id="journey-apply" type="button">Ver terrenos</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="active-profile hidden" id="active-profile">
+        <div>
+          <span class="section-kicker">Perfil ativo</span>
+          <div class="active-chips" id="active-chips"></div>
+        </div>
+        <button class="text-button" id="edit-profile" type="button">Editar perfil</button>
       </section>
 
       <section class="stats-grid" id="stats-grid" aria-label="Resumo do dataset">
@@ -69,43 +241,19 @@
         <article class="metric-card skeleton"></article>
       </section>
 
-      <section class="panel filters-panel">
+      <section class="panel quick-panel">
         <div class="panel-heading">
           <div>
-            <span class="section-kicker">Explorar</span>
-            <h2>Filtrar anúncios observados</h2>
+            <span class="section-kicker">Ajuste fino</span>
+            <h2>Refine os resultados</h2>
           </div>
-          <button class="text-button" id="clear-filters" type="button">Limpar filtros</button>
+          <button class="text-button" id="clear-quick-filters" type="button">Limpar ajuste fino</button>
         </div>
-
-        <div class="filters">
+        <div class="quick-filters">
           <label class="field field-wide">
-            <span>Buscar bairro, condomínio ou rua</span>
-            <input id="search-input" type="search" placeholder="Ex.: Parque Barnabé" autocomplete="off" />
+            <span>Buscar nos resultados</span>
+            <input id="search-input" type="search" placeholder="Bairro, condomínio, rua ou anunciante" autocomplete="off" />
           </label>
-
-          <label class="field">
-            <span>Preço máximo</span>
-            <select id="price-filter">
-              <option value="">Sem limite</option>
-              <option value="200000">Até R$ 200 mil</option>
-              <option value="300000">Até R$ 300 mil</option>
-              <option value="400000">Até R$ 400 mil</option>
-              <option value="500000">Até R$ 500 mil</option>
-            </select>
-          </label>
-
-          <label class="field">
-            <span>Topografia</span>
-            <select id="topography-filter">
-              <option value="">Todas</option>
-              <option value="plano">Plano</option>
-              <option value="aclive">Aclive</option>
-              <option value="declive">Declive</option>
-              <option value="unknown">Não informada</option>
-            </select>
-          </label>
-
           <label class="field">
             <span>Ordenar</span>
             <select id="sort-filter">
@@ -113,29 +261,30 @@
               <option value="price-asc">Menor preço</option>
               <option value="price-desc">Maior preço</option>
               <option value="area-desc">Maior área</option>
+              <option value="area-asc">Menor área</option>
             </select>
-          </label>
-
-          <label class="switch-field">
-            <input id="candidate-filter" type="checkbox" />
-            <span class="switch" aria-hidden="true"></span>
-            <span>Somente extremos estatísticos</span>
           </label>
         </div>
       </section>
 
-      <section class="visual-grid">
-        <article class="panel map-panel">
-          <div class="panel-heading compact">
-            <div>
-              <span class="section-kicker">Geografia</span>
-              <h2>Mapa dos anúncios</h2>
-            </div>
-            <span class="microcopy">Localização pode ser aproximada</span>
+      <section class="panel map-panel">
+        <div class="panel-heading compact map-heading">
+          <div>
+            <span class="section-kicker">Geografia</span>
+            <h2>Mapa dos terrenos filtrados</h2>
           </div>
+          <div class="map-legend">
+            <span><i class="legend-dot normal"></i>Dentro da faixa</span>
+            <span><i class="legend-dot candidate"></i>Extremo estatístico</span>
+            <span class="microcopy">Pontos podem ser aproximados</span>
+          </div>
+        </div>
+        <div class="map-frame">
           <div id="map" aria-label="Mapa dos anúncios"></div>
-        </article>
+        </div>
+      </section>
 
+      <section class="visual-grid secondary-visuals">
         <article class="panel chart-panel">
           <div class="panel-heading compact">
             <div>
@@ -148,13 +297,25 @@
             <canvas id="scatter-chart"></canvas>
           </div>
         </article>
+
+        <article class="panel insight-panel">
+          <div class="panel-heading compact">
+            <div>
+              <span class="section-kicker">Leitura da busca</span>
+              <h2>O que o filtro encontrou</h2>
+            </div>
+          </div>
+          <div class="insight-content" id="insight-content">
+            Carregando análise da seleção…
+          </div>
+        </article>
       </section>
 
-      <section class="panel table-panel">
+      <section class="panel table-panel" id="results">
         <div class="panel-heading table-heading">
           <div>
-            <span class="section-kicker">Dataset</span>
-            <h2>Terrenos observados</h2>
+            <span class="section-kicker">Resultados</span>
+            <h2>Terrenos compatíveis com o filtro</h2>
           </div>
           <div class="result-count" id="result-count">—</div>
         </div>
@@ -183,16 +344,16 @@
       <section class="method-card">
         <div>
           <span class="section-kicker">Metodologia desta tela</span>
-          <h2>Sem “número mágico”</h2>
+          <h2>Filtros baseados no que realmente temos</h2>
         </div>
         <div class="method-columns">
           <p>
-            O preço por m² é calculado como <strong>preço anunciado ÷ área anunciada</strong>.
-            Os extremos estatísticos usam, apenas para triagem experimental, valores abaixo de 60% ou acima de 160% da mediana da amostra filtrada.
+            Preço, área, condomínio, IPTU, topografia e infraestrutura são filtrados somente quando existem no anúncio.
+            Um campo ausente nunca é completado por inferência.
           </p>
           <p>
-            Duplicidades são apenas <strong>sinalizadas</strong>. Nenhum anúncio é excluído automaticamente.
-            Campos ausentes permanecem ausentes e a tela não infere zoneamento, liquidez, demanda, potencial construtivo ou rentabilidade.
+            Ainda não filtramos por zoneamento, potencial construtivo, testada obrigatória, preço real de venda,
+            liquidez ou demanda porque a base atual não sustenta essas conclusões com confiança.
           </p>
         </div>
       </section>
