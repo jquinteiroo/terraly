@@ -220,3 +220,17 @@ http://localhost:8000
 A tela também pode ser publicada diretamente com GitHub Pages usando a raiz da branch `master`.
 
 > Importante: os destaques da interface são sinais exploratórios. A tela não classifica terrenos como bons investimentos e não substitui validação urbanística, jurídica, técnica ou financeira.
+
+
+### Jornada de busca por perfil
+
+A interface agora possui uma jornada guiada em quatro etapas para montar o perfil do terreno:
+
+1. **Orçamento:** preço mínimo/máximo, limite de R$/m², condomínio e IPTU.
+2. **Terreno:** área mínima/máxima, preferência por condomínio e localização textual.
+3. **Características:** topografia e infraestrutura explicitamente mencionada nos anúncios.
+4. **Qualidade:** opção de ocultar possíveis duplicidades, exigir topografia e mostrar somente extremos estatísticos.
+
+Os filtros usam somente campos presentes no dataset. Zoneamento, potencial construtivo, liquidez, demanda e rentabilidade continuam fora da filtragem até existirem fontes adequadas para sustentá-los.
+
+O mapa também foi reorganizado em largura total, com redimensionamento automático, legenda e agrupamento visual quando múltiplos anúncios compartilham a mesma coordenada.
