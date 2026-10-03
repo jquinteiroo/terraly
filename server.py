@@ -40,26 +40,19 @@ class TerralyHandler(SimpleHTTPRequestHandler):
     def handle_bcb(self, parsed):
         query = urllib.parse.parse_qs(parsed.query)
         code = (query.get("code") or [""])[0].strip()
-        start = (query.get("start") or [""])[0].strip()
-        end = (query.get("end") or [""])[0].strip()
+        limit_raw = (query.get("limit") or ["30"])[0].strip()
 
-        if not code.isdigit() or not start or not end:
+        if not code.isdigit() or not limit_raw.isdigit():
             self.send_json(
                 HTTPStatus.BAD_REQUEST,
-                {"error": "Parâmetros esperados: code, start e end."},
+                {"error": "Parâmetros esperados: code e limit."},
             )
             return
 
-        upstream_params = urllib.parse.urlencode(
-            {
-                "formato": "json",
-                "dataInicial": start,
-                "dataFinal": end,
-            }
-        )
+        limit = max(1, min(int(limit_raw), 120))
         upstream_url = (
-            f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?"
-            f"{upstream_params}"
+            f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/"
+            f"dados/ultimos/{limit}?formato=json"
         )
 
         cache_key = upstream_url
