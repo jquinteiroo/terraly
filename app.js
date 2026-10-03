@@ -292,34 +292,45 @@ function renderTable(rows){
 }
 
 function initMap(){
-  state.map=L.map("map",{zoomControl:true,scrollWheelZoom:true,preferCanvas:true,zoomSnap:.5}).setView([-23.09,-47.22],12);
-  const carto=L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{
-    subdomains:"abcd",
-    maxZoom:20,
-    detectRetina:true,
+  state.map=L.map("map",{
+    zoomControl:true,
+    scrollWheelZoom:true,
+    preferCanvas:true,
+    zoomSnap:.5
+  }).setView([-23.09,-47.22],12);
+
+  const osm=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
+    maxZoom:19,
+    minZoom:3,
     updateWhenIdle:false,
-    keepBuffer:4,
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    keepBuffer:5,
+    detectRetina:false,
+    crossOrigin:true,
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   });
-  let errors=0,fallback=false;
-  carto.on("tileerror",()=>{
-    errors++;
-    if(errors<4||fallback)return;
-    fallback=true;
-    state.map.removeLayer(carto);
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
-      maxZoom:19,
-      updateWhenIdle:false,
-      keepBuffer:4,
-      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(state.map);
+
+  let tileErrors=0;
+  osm.on("tileerror",()=>{
+    tileErrors++;
+    if(tileErrors===4){
+      console.warn("Alguns tiles do mapa não carregaram. Verifique a conexão ou bloqueadores do navegador.");
+    }
   });
-  carto.addTo(state.map);
+
+  osm.addTo(state.map);
   state.markerLayer=L.layerGroup().addTo(state.map);
-  state.map.on("popupopen",()=>document.querySelectorAll("[data-map-detail-id]").forEach(b=>b.addEventListener("click",()=>openDetail(b.dataset.mapDetailId),{once:true})));
-  if("ResizeObserver"in window){
-    const o=new ResizeObserver(()=>requestAnimationFrame(()=>state.map?.invalidateSize({pan:false})));
-    o.observe($("#map"));
+
+  state.map.on("popupopen",()=>{
+    document.querySelectorAll("[data-map-detail-id]").forEach(button=>{
+      button.addEventListener("click",()=>openDetail(button.dataset.mapDetailId),{once:true});
+    });
+  });
+
+  if("ResizeObserver" in window){
+    const observer=new ResizeObserver(()=>{
+      requestAnimationFrame(()=>state.map?.invalidateSize({pan:false}));
+    });
+    observer.observe($("#map"));
   }
 }
 
