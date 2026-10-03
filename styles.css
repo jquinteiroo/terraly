@@ -249,7 +249,7 @@ main { padding: 58px 0 34px; }
 
 .journey-progress {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -268,6 +268,41 @@ main { padding: 58px 0 34px; }
   cursor: pointer;
   font-size: 11px;
   font-weight: 700;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.strategy-card { cursor: pointer; }
+.strategy-card input { position: absolute; opacity: 0; pointer-events: none; }
+
+.strategy-card-body {
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255,255,255,.015);
+  transition: border-color .15s ease, background .15s ease;
+}
+
+.strategy-card-body strong { font-size: 13px; }
+.strategy-card-body small { color: var(--muted); line-height: 1.5; font-size: 10px; }
+
+.strategy-card input:checked + .strategy-card-body {
+  border-color: rgba(124,242,173,.42);
+  background: rgba(124,242,173,.07);
+}
+
+.strategy-card input:focus-visible + .strategy-card-body {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .journey-dot span {
@@ -1037,12 +1072,13 @@ footer {
   .hero-actions .button { flex: 1; }
 
   .journey-intro { padding: 22px 18px 16px; }
-  .journey-progress { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .journey-progress { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .journey-dot { font-size: 0; min-height: 50px; }
   .journey-dot span { font-size: 10px; }
   .journey-step { padding: 24px 18px; }
   .journey-body { min-height: 0; }
   .grid-3 { grid-template-columns: 1fr; }
+  .strategy-grid { grid-template-columns: 1fr; }
   .journey-footer { align-items: flex-start; flex-direction: column; padding: 15px 18px; }
   .journey-actions { width: 100%; }
   .journey-actions .button { flex: 1; }
