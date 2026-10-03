@@ -1,5 +1,5 @@
 const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
-const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
+const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,marketFallbackUsed:false,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
 const numberBR=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
@@ -402,21 +402,32 @@ function changePercent(current,previous){
   return ((current/previous)-1)*100;
 }
 
-async function fetchBCBSeries(code,start,end){
-  const params=new URLSearchParams({
-    code:String(code),
-    start:formatDateBR(start),
-    end:formatDateBR(end)
-  });
-  const response=await fetch(`/api/bcb?${params.toString()}`,{
-    headers:{Accept:"application/json"},
-    cache:"no-store"
-  });
-  if(!response.ok){
-    const detail=await response.text().catch(()=>"");
-    throw new Error(`BCB série ${code}: HTTP ${response.status}${detail?` · ${detail.slice(0,120)}`:""}`);
+async async function fetchBCBSeries(code,start,end){
+  const limit=code===1178?45:30;
+  const localUrl=`/api/bcb?code=${encodeURIComponent(code)}&limit=${limit}`;
+  const directUrl=`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${limit}?formato=json`;
+
+  try{
+    const response=await fetch(localUrl,{headers:{Accept:"application/json"},cache:"no-store"});
+    if(response.ok) return parseBCBRows(await response.json());
+    console.warn("Proxy local BCB falhou:",response.status,await response.text().catch(()=>""));
+  }catch(error){
+    console.warn("Proxy local BCB indisponível:",error);
   }
-  return parseBCBRows(await response.json());
+
+  try{
+    const response=await fetch(directUrl,{headers:{Accept:"application/json"},cache:"no-store"});
+    if(response.ok) return parseBCBRows(await response.json());
+    console.warn("Consulta direta BCB falhou:",response.status);
+  }catch(error){
+    console.warn("Consulta direta BCB bloqueada:",error);
+  }
+
+  const fallback=await fetch("./data/market/bcb_fallback.json",{cache:"no-store"});
+  if(!fallback.ok) throw new Error("BCB e snapshot local indisponíveis.");
+  const snapshot=await fallback.json();
+  state.marketFallbackUsed=true;
+  return parseBCBRows(code===1178?snapshot.selic:snapshot.credit);
 }
 
 function renderMarketCreditChart(rows){
@@ -523,7 +534,9 @@ async function loadMarketData(){
     renderMarketReading({selic:latestSelic.value,creditRows});
 
     status.classList.remove("error");
-    status.innerHTML='<span class="status-dot"></span><span>BCB atualizado · dados oficiais</span>';
+    status.innerHTML=state.marketFallbackUsed
+      ? '<span class="status-dot"></span><span>Snapshot local · fallback verificado</span>'
+      : '<span class="status-dot"></span><span>BCB atualizado · dados oficiais</span>';
   }catch(error){
     console.error("Momento de mercado:",error);
     status.classList.add("error");
