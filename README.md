@@ -330,3 +330,18 @@ A interface agora calcula duas coisas diferentes:
 Se a API do BCB estiver indisponível e o fallback contiver apenas os meses recentes, a tela troca a sazonalidade por **pulso recente do crédito**, deixando explícito que não se trata de sazonalidade local.
 
 A sazonalidade real de anúncios, reduções de preço e comportamento de terrenos em Indaiatuba dependerá de snapshots futuros do próprio Terraly.
+
+
+### Gráfico sazonal Jan → Dez
+
+A seção **Momento de Mercado** também mostra um gráfico de barras com o índice sazonal mensal do crédito imobiliário.
+
+Metodologia:
+
+- cada mês é dividido pela média do seu próprio ano;
+- a média anual equivale a **100**;
+- os índices do mesmo mês são agregados entre anos úteis;
+- barras acima de 100 indicam meses historicamente acima da média anual daquele período;
+- barras abaixo de 100 indicam meses historicamente abaixo da média.
+
+O gráfico só aparece quando houver pelo menos dois anos úteis de histórico carregado. Se a aplicação estiver usando apenas o fallback curto, a interface informa que não há histórico suficiente em vez de gerar valores artificiais.
