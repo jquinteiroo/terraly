@@ -287,7 +287,8 @@ Dados integrados:
 - **Selic anualizada** via API pública do Banco Central, série SGS 1178;
 - **concessões mensais de financiamento imobiliário para pessoas físicas** via BCB, série SGS 20704;
 - **SINAPI Brasil** como snapshot oficial de agosto/2026: +0,44% no mês e +7,03% em 12 meses;
-- histórico local do Terraly, atualmente marcado como insuficiente para sazonalidade porque existe apenas um snapshot.
+- cobertura local do Terraly calculada a partir do dataset atual: anúncios, localizações distintas, bairros e possíveis duplicidades;
+- sazonalidade macro do crédito imobiliário calculada quando houver pelo menos dois anos suficientes da série BCB carregada; quando o fallback curto é usado, a interface mostra apenas o pulso mensal recente.
 
 O gráfico de crédito usa os últimos 24 meses disponíveis. A leitura do momento separa condições financeiras, crédito, custo de construção e disponibilidade de histórico local.
 
@@ -315,3 +316,17 @@ O fallback atual contém apenas valores já verificados:
 - crédito imobiliário PF: **R$ 26.575 milhões em 06/2026** e **R$ 28.162 milhões em 07/2026**.
 
 Quando o fallback é usado, a própria interface mostra **“Snapshot local · fallback verificado”** em vez de fingir que o dado foi atualizado ao vivo.
+
+
+#### Sazonalidade calculada sem inventar histórico local
+
+O Terraly não transforma um único snapshot de Indaiatuba em uma falsa série histórica.
+
+A interface agora calcula duas coisas diferentes:
+
+1. **Cobertura local atual:** quantidade de anúncios, localizações distintas por coordenada, bairros e registros sinalizados como possíveis duplicidades.
+2. **Sazonalidade macro do crédito:** quando a série SGS 20704 retorna histórico suficiente, cada mês é normalizado pela média de seu próprio ano (média anual = 100) e depois agregado entre anos completos. Isso reduz a distorção causada pelo crescimento nominal do crédito ao longo do tempo.
+
+Se a API do BCB estiver indisponível e o fallback contiver apenas os meses recentes, a tela troca a sazonalidade por **pulso recente do crédito**, deixando explícito que não se trata de sazonalidade local.
+
+A sazonalidade real de anúncios, reduções de preço e comportamento de terrenos em Indaiatuba dependerá de snapshots futuros do próprio Terraly.
