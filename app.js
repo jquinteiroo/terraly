@@ -402,7 +402,7 @@ function changePercent(current,previous){
   return ((current/previous)-1)*100;
 }
 
-async async function fetchBCBSeries(code,start,end){
+async function fetchBCBSeries(code,start,end){
   const limit=code===1178?45:30;
   const localUrl=`/api/bcb?code=${encodeURIComponent(code)}&limit=${limit}`;
   const directUrl=`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${limit}?formato=json`;
