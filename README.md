@@ -296,10 +296,22 @@ O FipeZAP não foi usado como indicador direto de terrenos porque o índice resi
 
 #### Por que existe o `server.py`
 
-A API SGS do Banco Central pode não aceitar uma chamada direta feita por JavaScript no navegador por causa de políticas de CORS. Por isso o Terraly consulta o BCB no lado do servidor:
+A API SGS do Banco Central pode não aceitar uma chamada direta feita por JavaScript no navegador por causa de políticas de CORS e pode apresentar instabilidade em consultas por intervalo. Por isso o Terraly consulta no lado do servidor o endpoint oficial de **últimos N valores**:
 
 ```text
 Browser -> /api/bcb -> server.py -> API do Banco Central
 ```
 
 Isso mantém as credenciais inexistentes (a API é pública), melhora a confiabilidade local e evita depender de proxies de terceiros.
+
+
+#### Fallback dos indicadores do BCB
+
+Se o proxy local e a consulta direta ao endpoint oficial estiverem indisponíveis, a interface usa `data/market/bcb_fallback.json`.
+
+O fallback atual contém apenas valores já verificados:
+
+- Selic over: **13,65% a.a. em 25/09/2026**;
+- crédito imobiliário PF: **R$ 26.575 milhões em 06/2026** e **R$ 28.162 milhões em 07/2026**.
+
+Quando o fallback é usado, a própria interface mostra **“Snapshot local · fallback verificado”** em vez de fingir que o dado foi atualizado ao vivo.
