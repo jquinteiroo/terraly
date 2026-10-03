@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-10-03",
+  "note": "Fallback local verificado para uso quando a API do BCB estiver indisponível. Selic over: 13,65% a.a. em 25/09/2026 (SGS 1178). Crédito imobiliário PF: R$ 26.575 mi em 06/2026 e R$ 28.162 mi em 07/2026 (SGS 20704).",
+  "selic": [
+    {
+      "data": "25/09/2026",
+      "valor": "13.65"
+    }
+  ],
+  "credit": [
+    {
+      "data": "01/06/2026",
+      "valor": "26575"
+    },
+    {
+      "data": "01/07/2026",
+      "valor": "28162"
+    }
+  ]
+}
