@@ -257,3 +257,14 @@ A jornada passou a usar seletores pré-definidos para os campos mais importantes
 Bairros e condomínios são preenchidos dinamicamente a partir do dataset carregado.
 
 O mapa usa tiles públicos do OpenStreetMap, sem API key, com marcadores de preço no estilo de portais imobiliários. Essa escolha evita dependência de provedor com chave de API e mantém o protótipo simples para execução local.
+
+
+## Momento de mercado
+
+O Terraly também terá uma camada temporal para contextualizar quando investigar compra, construção ou venda. A metodologia separa crédito, juros, custos, preços, estoque próprio, sazonalidade e hipóteses macroeconômicas.
+
+A especificação completa está em:
+
+- [Metodologia — Momento de Mercado](docs/market-timing-methodology.md)
+
+A hipótese de efeitos de ano eleitoral ou ano de mandato será tratada apenas por backtest. O sistema não deve assumir relações políticas como regras de investimento sem evidência histórica consistente.
