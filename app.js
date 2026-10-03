@@ -1,5 +1,5 @@
 const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
-const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceMin:null,priceMax:null,ppm2Max:null,condoMax:null,iptuMax:null,areaMin:null,areaMax:null,condoType:"",location:"",topography:"",infrastructure:[],hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
+const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
 const numberBR=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
@@ -11,6 +11,24 @@ function median(values){const a=values.filter(Number.isFinite).sort((x,y)=>x-y);
 function formatMoney(v){return Number.isFinite(v)?brl.format(v):"Não informado"}
 function formatPpm2(v){return Number.isFinite(v)?`${brl.format(v)}/m²`:"—"}
 function signatureValue(v){return String(v??"").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g," ")}
+
+function parseRange(value){
+  if(!value)return{min:null,max:null};
+  const [a,b]=String(value).split(":");
+  return{min:a===""?null:Number(a),max:b===""?null:Number(b)};
+}
+function inRange(value,rangeValue){
+  if(!rangeValue)return true;
+  const {min,max}=parseRange(rangeValue);
+  if(!Number.isFinite(value))return false;
+  if(min!==null&&value<min)return false;
+  if(max!==null&&value>max)return false;
+  return true;
+}
+function optionLabel(id,value){
+  const select=$(id);
+  return select?.querySelector(`option[value="${CSS.escape(value)}"]`)?.textContent?.trim()||value;
+}
 
 function normalizeRecord(record){
   const list=record.source_list_page||{},enrich=record.firecrawl_enrichment||{};
@@ -69,45 +87,41 @@ function candidateStatus(row,med){
 function readProfileFromForm(){
   return{
     strategy:document.querySelector('input[name="strategy"]:checked')?.value||"",
-    priceMin:numInput("#journey-price-min"),priceMax:numInput("#journey-price-max"),ppm2Max:numInput("#journey-ppm2-max"),
-    condoMax:numInput("#journey-condo-max"),iptuMax:numInput("#journey-iptu-max"),areaMin:numInput("#journey-area-min"),areaMax:numInput("#journey-area-max"),
-    condoType:$("#journey-condo-type").value,location:$("#journey-location").value.trim(),topography:$("#journey-topography").value,
-    infrastructure:[...document.querySelectorAll("#infrastructure-choices input:checked")].map(i=>i.value),
-    hideDuplicates:$("#journey-hide-duplicates").checked,requireTopography:$("#journey-require-topography").checked,onlyCandidates:$("#journey-only-candidates").checked
+    priceRange:$("#journey-price-range").value,
+    ppm2Range:$("#journey-ppm2-range").value,
+    condoCost:$("#journey-condo-cost").value,
+    iptuCost:$("#journey-iptu-cost").value,
+    areaRange:$("#journey-area-range").value,
+    neighborhood:$("#journey-neighborhood").value,
+    condominium:$("#journey-condominium").value,
+    condoType:$("#journey-condo-type").value,
+    topography:$("#journey-topography").value,
+    infrastructure:$("#journey-infrastructure").value,
+    feature:$("#journey-feature").value,
+    hideDuplicates:$("#journey-hide-duplicates").checked,
+    requireTopography:$("#journey-require-topography").checked,
+    onlyCandidates:$("#journey-only-candidates").checked
   };
 }
 
-function validateProfile(p){
-  const e=[];
-  if(p.priceMin!==null&&p.priceMax!==null&&p.priceMin>p.priceMax)e.push("o preço mínimo não pode ser maior que o máximo");
-  if(p.areaMin!==null&&p.areaMax!==null&&p.areaMin>p.areaMax)e.push("a área mínima não pode ser maior que a máxima");
-  return e;
-}
+function validateProfile(){ return []; }
 
 function profileLabels(p){
   const l=[];
   const strategies={build_sell:"Construir e vender",build_rent:"Construir e alugar",appreciation:"Comprar para valorização",explore:"Explorar oportunidades"};
   if(p.strategy)l.push(strategies[p.strategy]||p.strategy);
-  if(p.priceMin!==null||p.priceMax!==null){
-    if(p.priceMin!==null&&p.priceMax!==null)l.push(`${formatMoney(p.priceMin)}–${formatMoney(p.priceMax)}`);
-    else if(p.priceMin!==null)l.push(`A partir de ${formatMoney(p.priceMin)}`);
-    else l.push(`Até ${formatMoney(p.priceMax)}`);
-  }
-  if(p.areaMin!==null||p.areaMax!==null){
-    if(p.areaMin!==null&&p.areaMax!==null)l.push(`${numberBR.format(p.areaMin)}–${numberBR.format(p.areaMax)} m²`);
-    else if(p.areaMin!==null)l.push(`Área ≥ ${numberBR.format(p.areaMin)} m²`);
-    else l.push(`Área ≤ ${numberBR.format(p.areaMax)} m²`);
-  }
-  if(p.ppm2Max!==null)l.push(`Até ${formatPpm2(p.ppm2Max)}`);
-  if(p.condoMax!==null)l.push(`Condomínio ≤ ${formatMoney(p.condoMax)}`);
-  if(p.iptuMax!==null)l.push(`IPTU ≤ ${formatMoney(p.iptuMax)}`);
+  if(p.priceRange)l.push(optionLabel("#journey-price-range",p.priceRange));
+  if(p.ppm2Range)l.push(optionLabel("#journey-ppm2-range",p.ppm2Range));
+  if(p.condoCost)l.push("Condomínio: "+optionLabel("#journey-condo-cost",p.condoCost));
+  if(p.iptuCost)l.push("IPTU: "+optionLabel("#journey-iptu-cost",p.iptuCost));
+  if(p.areaRange)l.push(optionLabel("#journey-area-range",p.areaRange));
+  if(p.neighborhood)l.push(p.neighborhood);
+  if(p.condominium)l.push(p.condominium);
   if(p.condoType==="with")l.push("Com condomínio identificado");
   if(p.condoType==="without")l.push("Sem condomínio identificado");
-  if(p.location)l.push(p.location);
-  if(p.topography==="known")l.push("Topografia informada");
-  if(["plano","aclive","declive"].includes(p.topography))l.push(`Topografia: ${p.topography}`);
-  const names={agua:"Água",esgoto:"Esgoto",paviment:"Pavimentação",portaria:"Portaria",segur:"Segurança",lazer:"Lazer"};
-  p.infrastructure.forEach(i=>l.push(names[i]||i));
+  if(p.topography)l.push("Topografia: "+optionLabel("#journey-topography",p.topography));
+  if(p.infrastructure)l.push(optionLabel("#journey-infrastructure",p.infrastructure));
+  if(p.feature)l.push(optionLabel("#journey-feature",p.feature));
   if(p.hideDuplicates)l.push("Sem possíveis duplicidades");
   if(p.requireTopography)l.push("Exigir topografia");
   if(p.onlyCandidates)l.push("Somente extremos de R$/m²");
@@ -139,12 +153,16 @@ function applyProfile(){
 }
 
 function resetJourneyForm(){
-  ["#journey-price-min","#journey-price-max","#journey-ppm2-max","#journey-condo-max","#journey-iptu-max","#journey-area-min","#journey-area-max","#journey-location"].forEach(s=>{const e=$(s);if(e)e.value=""});
   document.querySelectorAll('input[name="strategy"]').forEach(i=>i.checked=false);
-  $("#journey-condo-type").value="";$("#journey-topography").value="";
-  $("#journey-hide-duplicates").checked=false;$("#journey-require-topography").checked=false;$("#journey-only-candidates").checked=false;
-  document.querySelectorAll("#infrastructure-choices input").forEach(i=>i.checked=false);
-  state.profile=readProfileFromForm(); setJourneyStep(1); updateJourneySummary(); $("#active-profile").classList.add("hidden"); renderAll();
+  ["#journey-price-range","#journey-ppm2-range","#journey-condo-cost","#journey-iptu-cost","#journey-area-range","#journey-neighborhood","#journey-condominium","#journey-condo-type","#journey-topography","#journey-infrastructure","#journey-feature"].forEach(s=>{const e=$(s);if(e)e.value=""});
+  $("#journey-hide-duplicates").checked=false;
+  $("#journey-require-topography").checked=false;
+  $("#journey-only-candidates").checked=false;
+  state.profile=readProfileFromForm();
+  setJourneyStep(1);
+  updateJourneySummary();
+  $("#active-profile").classList.add("hidden");
+  renderAll();
 }
 
 function renderActiveProfile(){
@@ -152,32 +170,68 @@ function renderActiveProfile(){
   $("#active-chips").innerHTML=labels.length?labels.map(x=>`<span class="profile-chip">${escapeHtml(x)}</span>`).join(""):'<span class="profile-chip">Sem restrições</span>';
 }
 
-function rowMatchesInfrastructure(row,tokens){
-  if(!tokens.length)return true;
+function rowMatchesInfrastructure(row,pack){
+  if(!pack)return true;
   const h=signatureValue([...row.infrastructure,...row.condominiumFeatures,row.description||""].join(" "));
-  return tokens.every(t=>h.includes(signatureValue(t)));
+  if(pack==="basic")return h.includes("agua")&&h.includes("esgoto");
+  if(pack==="paved")return h.includes("paviment")||h.includes("asfalt");
+  if(pack==="security")return h.includes("portaria")||h.includes("segur")||h.includes("ronda");
+  if(pack==="leisure")return ["piscina","quadra","playground","churrasqueira","lazer","academia","salao de festas"].some(x=>h.includes(x));
+  return true;
+}
+
+function rowMatchesFeature(row,feature){
+  if(!feature)return true;
+  const h=signatureValue(row.description||"");
+  if(feature==="ready")return h.includes("pronto para construir")||h.includes("pronto pra construir");
+  if(feature==="approved")return h.includes("aprova")||h.includes("projeto");
+  if(feature==="registered")return h.includes("escritur")||h.includes("registrad");
+  return true;
+}
+
+function populateDynamicDropdowns(){
+  const neighborhood=$("#journey-neighborhood");
+  const condominium=$("#journey-condominium");
+  const neighborhoods=[...new Set(state.all.map(r=>r.neighborhood).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  const condos=[...new Set(state.all.map(r=>r.condominium).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  neighborhoods.forEach(value=>{
+    const option=document.createElement("option"); option.value=value; option.textContent=value; neighborhood.appendChild(option);
+  });
+  condos.forEach(value=>{
+    const option=document.createElement("option"); option.value=value; option.textContent=value; condominium.appendChild(option);
+  });
 }
 
 function getFilteredRows(){
   const p=state.profile,quick=signatureValue($("#search-input")?.value||"");
   let rows=state.all.filter(row=>{
-    if(p.priceMin!==null&&row.price<p.priceMin)return false;
-    if(p.priceMax!==null&&row.price>p.priceMax)return false;
-    if(p.ppm2Max!==null&&row.ppm2>p.ppm2Max)return false;
-    if(p.areaMin!==null&&row.area<p.areaMin)return false;
-    if(p.areaMax!==null&&row.area>p.areaMax)return false;
-    if(p.condoMax!==null&&!row.condoExempt&&(row.condoValue===null||row.condoValue>p.condoMax))return false;
-    if(p.iptuMax!==null&&!row.iptuExempt&&(row.iptuValue===null||row.iptuValue>p.iptuMax))return false;
+    if(!inRange(row.price,p.priceRange))return false;
+    if(!inRange(row.ppm2,p.ppm2Range))return false;
+    if(!inRange(row.area,p.areaRange))return false;
+
+    if(p.condoCost){
+      if(p.condoCost==="isento"){ if(!row.condoExempt)return false; }
+      else if(!row.condoExempt&&!inRange(row.condoValue,p.condoCost))return false;
+    }
+    if(p.iptuCost){
+      if(p.iptuCost==="isento"){ if(!row.iptuExempt)return false; }
+      else if(!row.iptuExempt&&!inRange(row.iptuValue,p.iptuCost))return false;
+    }
+
+    if(p.neighborhood&&row.neighborhood!==p.neighborhood)return false;
+    if(p.condominium&&row.condominium!==p.condominium)return false;
     if(p.condoType==="with"&&!row.condominium)return false;
     if(p.condoType==="without"&&row.condominium)return false;
-    const loc=signatureValue(p.location);
-    if(loc&&! [row.neighborhood,row.address,row.condominium].map(signatureValue).join(" ").includes(loc))return false;
+
     const topo=topographyKey(row);
     if(p.topography==="known"&&topo==="unknown")return false;
     if(["plano","aclive","declive"].includes(p.topography)&&topo!==p.topography)return false;
     if(p.requireTopography&&topo==="unknown")return false;
+
     if(!rowMatchesInfrastructure(row,p.infrastructure))return false;
+    if(!rowMatchesFeature(row,p.feature))return false;
     if(p.hideDuplicates&&state.duplicateIds.has(row.id))return false;
+
     if(quick&&! [row.neighborhood,row.address,row.condominium,row.advertiser,row.description].map(signatureValue).join(" ").includes(quick))return false;
     return true;
   });
@@ -238,28 +292,72 @@ function renderTable(rows){
 }
 
 function initMap(){
-  state.map=L.map("map",{zoomControl:true,scrollWheelZoom:false,preferCanvas:true}).setView([-23.09,-47.22],12);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(state.map);
+  state.map=L.map("map",{zoomControl:true,scrollWheelZoom:true,preferCanvas:true,zoomSnap:.5}).setView([-23.09,-47.22],12);
+  const carto=L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",{
+    subdomains:"abcd",
+    maxZoom:20,
+    detectRetina:true,
+    updateWhenIdle:false,
+    keepBuffer:4,
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  });
+  let errors=0,fallback=false;
+  carto.on("tileerror",()=>{
+    errors++;
+    if(errors<4||fallback)return;
+    fallback=true;
+    state.map.removeLayer(carto);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
+      maxZoom:19,
+      updateWhenIdle:false,
+      keepBuffer:4,
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(state.map);
+  });
+  carto.addTo(state.map);
   state.markerLayer=L.layerGroup().addTo(state.map);
   state.map.on("popupopen",()=>document.querySelectorAll("[data-map-detail-id]").forEach(b=>b.addEventListener("click",()=>openDetail(b.dataset.mapDetailId),{once:true})));
-  if("ResizeObserver"in window){const o=new ResizeObserver(()=>requestAnimationFrame(()=>state.map?.invalidateSize({pan:false})));o.observe($("#map"))}
+  if("ResizeObserver"in window){
+    const o=new ResizeObserver(()=>requestAnimationFrame(()=>state.map?.invalidateSize({pan:false})));
+    o.observe($("#map"));
+  }
 }
 
 function renderMap(rows){
   if(!state.map)initMap();
   state.markerLayer.clearLayers();
   const valid=rows.filter(r=>Number.isFinite(r.latitude)&&Number.isFinite(r.longitude));
-  if(!valid.length){state.map.setView([-23.09,-47.22],12);setTimeout(()=>state.map.invalidateSize({pan:false}),40);return}
+  if(!valid.length){
+    state.map.setView([-23.09,-47.22],12);
+    setTimeout(()=>state.map.invalidateSize({pan:false}),60);
+    return;
+  }
   const med=median(rows.map(r=>r.ppm2)),groups=new Map();
-  valid.forEach(r=>{const k=`${r.latitude.toFixed(6)}|${r.longitude.toFixed(6)}`;if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r)});
+  valid.forEach(r=>{
+    const k=`${r.latitude.toFixed(6)}|${r.longitude.toFixed(6)}`;
+    if(!groups.has(k))groups.set(k,[]);
+    groups.get(k).push(r);
+  });
   groups.forEach(group=>{
     const first=group[0],candidate=group.some(r=>candidateStatus(r,med));
-    const marker=L.circleMarker([first.latitude,first.longitude],{radius:group.length>1?10:8,color:candidate?"#9b7a24":"#226841",weight:2,fillColor:candidate?"#e7c66f":"#7cf2ad",fillOpacity:.88});
+    const price=first.price>=1000000?`R$ ${(first.price/1000000).toFixed(1).replace(".",",")} mi`:`R$ ${Math.round(first.price/1000)} mil`;
+    const cls=`price-marker${candidate?" candidate":""}${group.length>1?" multiple":""}`;
+    const icon=L.divIcon({
+      className:"",
+      html:`<div class="${cls}" data-count="${group.length}">${escapeHtml(price)}</div>`,
+      iconSize:[90,36],
+      iconAnchor:[45,18]
+    });
+    const marker=L.marker([first.latitude,first.longitude],{icon});
     const label=group.length>1?`<small>${group.length} anúncios compartilham esta coordenada</small>`:`<small>${escapeHtml(first.address||"Localização aproximada")}</small>`;
     marker.bindPopup(`<div class="map-popup"><strong>${escapeHtml(first.neighborhood)}</strong>${label}<div class="popup-price">${formatMoney(first.price)} · ${formatPpm2(first.ppm2)}</div><button type="button" data-map-detail-id="${escapeHtml(first.id)}">Ver detalhes</button></div>`);
     marker.addTo(state.markerLayer);
   });
-  setTimeout(()=>{state.map.invalidateSize({pan:false});if(valid.length===1)state.map.setView([valid[0].latitude,valid[0].longitude],14);else state.map.fitBounds(L.latLngBounds(valid.map(r=>[r.latitude,r.longitude])).pad(.12),{maxZoom:14})},50);
+  setTimeout(()=>{
+    state.map.invalidateSize({pan:false});
+    if(valid.length===1)state.map.setView([valid[0].latitude,valid[0].longitude],14);
+    else state.map.fitBounds(L.latLngBounds(valid.map(r=>[r.latitude,r.longitude])).pad(.16),{maxZoom:14});
+  },100);
 }
 
 function renderChart(rows){
@@ -313,16 +411,24 @@ function bindEvents(){
   $("#search-input").addEventListener("input",renderAll);
   $("#sort-filter").addEventListener("change",renderAll);
   $("#clear-quick-filters").addEventListener("click",()=>{$("#search-input").value="";$("#sort-filter").value="ppm2-asc";renderAll()});
-  $("#drawer-close").addEventListener("click",closeDetail);$("#drawer-backdrop").addEventListener("click",closeDetail);
+  $("#drawer-close").addEventListener("click",closeDetail);
+  $("#drawer-backdrop").addEventListener("click",closeDetail);
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail()});
 }
 
-async function boot(){
+async async function boot(){
   try{
-    const response=await fetch(DATA_URL,{cache:"no-store"});if(!response.ok)throw new Error(`Falha ao carregar dataset (HTTP ${response.status})`);
-    state.dataset=await response.json();state.all=(state.dataset.records||[]).map(normalizeRecord);state.duplicateIds=buildDuplicateFlags(state.all);
+    const response=await fetch(DATA_URL,{cache:"no-store"});
+    if(!response.ok)throw new Error(`Falha ao carregar dataset (HTTP ${response.status})`);
+    state.dataset=await response.json();
+    state.all=(state.dataset.records||[]).map(normalizeRecord);
+    state.duplicateIds=buildDuplicateFlags(state.all);
+    populateDynamicDropdowns();
     $("#dataset-status").textContent=`${state.all.length} anúncios · coleta ${state.dataset.collection_date||"01/10/2026"}`;
-    bindEvents();setJourneyStep(1);updateJourneySummary();renderAll();
+    bindEvents();
+    setJourneyStep(1);
+    updateJourneySummary();
+    renderAll();
   }catch(error){
     console.error(error);
     $("main").innerHTML=`<div class="error-box"><strong>Não foi possível carregar o dataset.</strong><p>Abra o projeto por um servidor HTTP (por exemplo, GitHub Pages ou <code>python -m http.server</code>) em vez de abrir o HTML diretamente.</p><small>${escapeHtml(error.message)}</small></div>`;
