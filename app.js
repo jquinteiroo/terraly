@@ -402,7 +402,7 @@ function changePercent(current,previous){
   return ((current/previous)-1)*100;
 }
 
-async async function fetchBCBSeries(code,start,end){
+async function fetchBCBSeries(code,start,end){
   const params=new URLSearchParams({
     code:String(code),
     start:formatDateBR(start),
