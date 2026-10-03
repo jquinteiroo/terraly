@@ -1,5 +1,5 @@
 const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
-const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,marketFallbackUsed:false,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
+const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,marketSeasonalityChart:null,marketFallbackUsed:false,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
 const numberBR=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
@@ -539,6 +539,87 @@ function renderLocalMarketCoverage(){
   if(meta)meta.textContent=`${rows.length} anúncios · ${neighborhoods.size} bairros · ${duplicateFlags} anúncios sinalizados como possíveis duplicidades`;
 }
 
+function renderCreditSeasonalityChart(rows){
+  const canvas=$("#market-seasonality-chart");
+  const empty=$("#market-seasonality-empty");
+  const footer=$("#market-seasonality-footer");
+  if(!canvas||!window.Chart)return;
+
+  const seasonality=calculateCreditSeasonality(rows);
+
+  if(state.marketSeasonalityChart){
+    state.marketSeasonalityChart.destroy();
+    state.marketSeasonalityChart=null;
+  }
+
+  if(!seasonality){
+    canvas.classList.add("hidden");
+    if(empty)empty.classList.remove("hidden");
+    if(footer)footer.textContent="Sem histórico suficiente nesta execução. Quando a série completa estiver disponível, o Terraly calcula o índice sazonal mensal automaticamente.";
+    return;
+  }
+
+  canvas.classList.remove("hidden");
+  if(empty)empty.classList.add("hidden");
+
+  const values=seasonality.indexes.map(item=>item.value);
+  const labels=seasonality.indexes.map(item=>item.label);
+
+  state.marketSeasonalityChart=new Chart(canvas,{
+    type:"bar",
+    data:{
+      labels,
+      datasets:[{
+        label:"Índice sazonal",
+        data:values,
+        backgroundColor:values.map(value=>value>=100?"rgba(124,242,173,.62)":"rgba(142,200,255,.42)"),
+        borderColor:values.map(value=>value>=100?"#7cf2ad":"#8ec8ff"),
+        borderWidth:1.25,
+        borderRadius:6,
+        maxBarThickness:34
+      }]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:"#0b1812",
+          borderColor:"rgba(196,255,221,.16)",
+          borderWidth:1,
+          titleColor:"#f4fbf7",
+          bodyColor:"#9ab0a4",
+          callbacks:{
+            label:item=>`Índice: ${numberBR.format(item.raw)} (média anual = 100)`
+          }
+        }
+      },
+      scales:{
+        x:{
+          ticks:{color:"#7f968a",font:{size:10}},
+          grid:{display:false},
+          border:{color:"rgba(196,255,221,.08)"}
+        },
+        y:{
+          suggestedMin:85,
+          suggestedMax:115,
+          ticks:{color:"#6f867a",font:{size:9}},
+          grid:{
+            color:ctx=>ctx.tick.value===100?"rgba(124,242,173,.22)":"rgba(196,255,221,.05)",
+            lineWidth:ctx=>ctx.tick.value===100?1.5:1
+          },
+          border:{color:"rgba(196,255,221,.08)"}
+        }
+      }
+    }
+  });
+
+  if(footer){
+    footer.textContent=`${seasonality.yearsUsed} anos úteis · ${seasonality.strongest.label} é o mês historicamente mais forte (${numberBR.format(seasonality.strongest.value)}) e ${seasonality.weakest.label} o mais fraco (${numberBR.format(seasonality.weakest.value)}). O índice representa sazonalidade nacional do crédito, não vendas de terrenos em Indaiatuba.`;
+  }
+}
+
 function renderMarketReading({selic,creditRows}){
   const latestCredit=creditRows.at(-1);
   const previous3=creditRows.length>=4?creditRows[creditRows.length-4]:null;
@@ -623,6 +704,7 @@ async function loadMarketData(){
       : `Referência: ${latestCredit.date} · ${monthlyChange>=0?"+":""}${numberBR.format(monthlyChange)}% vs. mês anterior`;
 
     renderMarketCreditChart(creditRows);
+    renderCreditSeasonalityChart(creditRows);
     renderMarketReading({selic:latestSelic.value,creditRows});
 
     status.classList.remove("error");
