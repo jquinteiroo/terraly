@@ -268,3 +268,19 @@ A especificação completa está em:
 - [Metodologia — Momento de Mercado](docs/market-timing-methodology.md)
 
 A hipótese de efeitos de ano eleitoral ou ano de mandato será tratada apenas por backtest. O sistema não deve assumir relações políticas como regras de investimento sem evidência histórica consistente.
+
+
+### Implementação inicial do momento de mercado
+
+A interface agora possui uma seção **Momento de Mercado**.
+
+Dados integrados:
+
+- **Selic anualizada** via API pública do Banco Central, série SGS 1178;
+- **concessões mensais de financiamento imobiliário para pessoas físicas** via BCB, série SGS 20704;
+- **SINAPI Brasil** como snapshot oficial de agosto/2026: +0,44% no mês e +7,03% em 12 meses;
+- histórico local do Terraly, atualmente marcado como insuficiente para sazonalidade porque existe apenas um snapshot.
+
+O gráfico de crédito usa os últimos 24 meses disponíveis. A leitura do momento separa condições financeiras, crédito, custo de construção e disponibilidade de histórico local.
+
+O FipeZAP não foi usado como indicador direto de terrenos porque o índice residencial acompanha principalmente apartamentos prontos.
