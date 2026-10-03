@@ -237,3 +237,23 @@ A estratégia já é armazenada no perfil e exibida na interface, mas ainda **n�
 Os filtros usam somente campos presentes no dataset. Zoneamento, potencial construtivo, liquidez, demanda e rentabilidade continuam fora da filtragem até existirem fontes adequadas para sustentá-los.
 
 O mapa também foi reorganizado em largura total, com redimensionamento automático, legenda e agrupamento visual quando múltiplos anúncios compartilham a mesma coordenada.
+
+
+### Filtros por dropdown
+
+A jornada passou a usar seletores pré-definidos para os campos mais importantes, mantendo a estética da aplicação e reduzindo entradas livres. Hoje é possível selecionar:
+
+- faixa de preço do terreno;
+- faixa de preço por m²;
+- faixa de área;
+- taxa de condomínio;
+- IPTU informado;
+- bairro;
+- condomínio específico;
+- topografia;
+- pacote de infraestrutura mencionada;
+- sinais textuais como “pronto para construir”, projeto/aprovação e escritura/registro.
+
+Bairros e condomínios são preenchidos dinamicamente a partir do dataset carregado.
+
+O mapa passou a usar um basemap escuro via CARTO com fallback para OpenStreetMap e marcadores de preço no estilo de portais imobiliários. A troca foi feita para melhorar legibilidade, reduzir o problema visual de tiles faltantes e integrar o mapa à identidade do Terraly.
