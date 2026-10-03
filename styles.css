@@ -1105,3 +1105,81 @@ footer {
   .active-profile { flex-direction: column; }
   #map { height: 360px; min-height: 360px; }
 }
+
+/* Dropdown + real-estate map polish */
+.select-field select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 38px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 17px) calc(50% - 2px),
+    calc(100% - 12px) calc(50% - 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.select-field select:hover {
+  border-color: rgba(124,242,173,.28);
+  background-color: #0b1913;
+}
+
+.leaflet-container {
+  background: #07110d;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: 0;
+}
+
+.price-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(7,17,13,.32);
+  background: #ecfff3;
+  color: #0a2d1b;
+  font-size: 10px;
+  font-weight: 850;
+  box-shadow: 0 6px 18px rgba(0,0,0,.24);
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+.price-marker.candidate {
+  background: #ffe9a8;
+  color: #49370b;
+}
+
+.price-marker.multiple::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 19px;
+  height: 19px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  padding: 0 4px;
+  background: #0d1914;
+  color: var(--text);
+  border: 1px solid rgba(196,255,221,.22);
+  font-size: 8px;
+  box-sizing: border-box;
+}
+
+.map-frame {
+  background: #07110d;
+}
+
+#map {
+  background: #07110d;
+}
