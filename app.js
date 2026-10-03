@@ -403,7 +403,7 @@ function changePercent(current,previous){
 }
 
 async function fetchBCBSeries(code,start,end){
-  const limit=code===1178?45:30;
+  const limit=code===1178?45:120;
   const localUrl=`/api/bcb?code=${encodeURIComponent(code)}&limit=${limit}`;
   const directUrl=`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${limit}?formato=json`;
 
@@ -473,7 +473,127 @@ function renderMarketCreditChart(rows){
   });
 }
 
+function parseBCBDate(dateText){
+  const [day,month,year]=String(dateText).split("/").map(Number);
+  return {day,month,year};
+}
+
+function calculateCreditSeasonality(rows){
+  if(!rows||rows.length<24)return null;
+
+  const byYear=new Map();
+  rows.forEach(item=>{
+    const {month,year}=parseBCBDate(item.date);
+    if(!month||!year||!Number.isFinite(item.value))return;
+    if(!byYear.has(year))byYear.set(year,[]);
+    byYear.get(year).push({month,value:item.value});
+  });
+
+  const monthIndexes=Array.from({length:12},()=>[]);
+  let yearsUsed=0;
+
+  byYear.forEach(items=>{
+    if(items.length<10)return;
+    const annualMean=items.reduce((sum,item)=>sum+item.value,0)/items.length;
+    if(!Number.isFinite(annualMean)||annualMean===0)return;
+    yearsUsed++;
+    items.forEach(item=>{
+      monthIndexes[item.month-1].push((item.value/annualMean)*100);
+    });
+  });
+
+  if(yearsUsed<2)return null;
+
+  const months=["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+  const indexes=monthIndexes.map((values,index)=>({
+    month:index+1,
+    label:months[index],
+    value:values.length?values.reduce((a,b)=>a+b,0)/values.length:null,
+    observations:values.length
+  })).filter(item=>Number.isFinite(item.value));
+
+  if(indexes.length<10)return null;
+
+  const strongest=indexes.reduce((a,b)=>a.value>b.value?a:b);
+  const weakest=indexes.reduce((a,b)=>a.value<b.value?a:b);
+  const latest=rows.at(-1);
+  const latestMonth=parseBCBDate(latest.date).month;
+  const current=indexes.find(item=>item.month===latestMonth)||null;
+
+  return {indexes,strongest,weakest,current,yearsUsed};
+}
+
+function renderLocalMarketCoverage(){
+  const rows=state.all||[];
+  const coordinateKeys=new Set(
+    rows
+      .filter(row=>Number.isFinite(row.latitude)&&Number.isFinite(row.longitude))
+      .map(row=>`${row.latitude.toFixed(6)}|${row.longitude.toFixed(6)}`)
+  );
+  const neighborhoods=new Set(rows.map(row=>row.neighborhood).filter(Boolean));
+  const duplicateFlags=rows.filter(row=>state.duplicateIds.has(row.id)).length;
+
+  const value=$("#market-local-coverage");
+  const meta=$("#market-local-coverage-meta");
+  if(value)value.textContent=`${coordinateKeys.size} localizações`;
+  if(meta)meta.textContent=`${rows.length} anúncios · ${neighborhoods.size} bairros · ${duplicateFlags} anúncios sinalizados como possíveis duplicidades`;
+}
+
 function renderMarketReading({selic,creditRows}){
+  const latestCredit=creditRows.at(-1);
+  const previous3=creditRows.length>=4?creditRows[creditRows.length-4]:null;
+  const previousMonth=creditRows.length>=2?creditRows[creditRows.length-2]:null;
+  const credit3m=latestCredit&&previous3?changePercent(latestCredit.value,previous3.value):null;
+  const credit1m=latestCredit&&previousMonth?changePercent(latestCredit.value,previousMonth.value):null;
+  const seasonality=calculateCreditSeasonality(creditRows);
+
+  const selicLevel=selic>=12?"attention":selic>=8?"neutral":"positive";
+  const selicLabel=selic>=12?"Juros elevados":selic>=8?"Juros intermediários":"Juros mais baixos";
+  const creditLevel=credit3m===null?(credit1m!==null&&credit1m>0?"positive":"neutral"):credit3m>5?"positive":credit3m<-5?"attention":"neutral";
+  const creditLabel=credit3m===null
+    ? (credit1m===null?"Sem tendência":`${credit1m>=0?"Alta":"Queda"} de ${numberBR.format(Math.abs(credit1m))}% no mês`)
+    : "Crédito "+(credit3m>5?"expandindo":credit3m<-5?"retraindo":"estável");
+
+  let seasonalTitle="Pulso recente do crédito";
+  let seasonalBadge="Curto prazo";
+  let seasonalClass="";
+  let seasonalText=credit1m===null
+    ?"Ainda não há histórico suficiente na fonte carregada para calcular sazonalidade."
+    : `Entre os dois últimos meses disponíveis, as concessões variaram ${credit1m>=0?"+":""}${numberBR.format(credit1m)}%. Isso mede movimento recente, não sazonalidade local.`;
+
+  if(seasonality){
+    seasonalTitle="Sazonalidade macro do crédito";
+    const currentDelta=seasonality.current?seasonality.current.value-100:null;
+    seasonalBadge=seasonality.strongest.label+" historicamente mais forte";
+    seasonalClass="positive";
+    seasonalText=`Com ${seasonality.yearsUsed} anos completos da série, ${seasonality.strongest.label} apresenta o maior índice sazonal médio (${numberBR.format(seasonality.strongest.value)}; média anual = 100), enquanto ${seasonality.weakest.label} apresenta o menor (${numberBR.format(seasonality.weakest.value)}). ${currentDelta===null?"":`Para ${seasonality.current.label}, o padrão histórico fica ${currentDelta>=0?"+":""}${numberBR.format(currentDelta)}% em relação à média anual normalizada.`} Isso é sazonalidade nacional do crédito, não de vendas de terrenos em Indaiatuba.`;
+  }
+
+  $("#market-reading").innerHTML=`
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Condições financeiras</strong><span class="${selicLevel}">${selicLabel}</span></div>
+      <p>Selic anualizada em ${numberBR.format(selic)}%. Juros mais altos tendem a aumentar o custo de capital e financiamento, mas isso não determina sozinho o resultado de um projeto.</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Crédito imobiliário</strong><span class="${creditLevel}">${creditLabel}</span></div>
+      <p>${credit3m===null
+        ? (credit1m===null?"Não foi possível medir a variação recente.":`As concessões mudaram ${credit1m>=0?"+":""}${numberBR.format(credit1m)}% frente ao mês anterior.`)
+        : `As concessões mensais variaram ${credit3m>=0?"+":""}${numberBR.format(credit3m)}% em relação a três meses antes.`}</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Custo da construção</strong><span class="attention">+7,03% em 12 meses</span></div>
+      <p>SINAPI Brasil, referência agosto/2026. Para estratégia de construir e vender, esse indicador deve entrar nos cenários de custo e stress test.</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>${seasonalTitle}</strong><span class="${seasonalClass}">${seasonalBadge}</span></div>
+      <p>${seasonalText}</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Cobertura local Terraly</strong><span>${state.all.length} anúncios</span></div>
+      <p>A base local já permite medir distribuição de preços, áreas, bairros, coordenadas repetidas e cobertura de atributos. Histórico temporal local de compra/venda será calculado somente após novos snapshots.</p>
+    </div>
+  `;
+}){
   const latestCredit=creditRows.at(-1);
   const previous3=creditRows.length>=4?creditRows[creditRows.length-4]:null;
   const credit3m=latestCredit&&previous3?changePercent(latestCredit.value,previous3.value):null;
@@ -597,6 +717,7 @@ async function boot(){
     state.all=(state.dataset.records||[]).map(normalizeRecord);
     state.duplicateIds=buildDuplicateFlags(state.all);
     populateDynamicDropdowns();
+    renderLocalMarketCoverage();
     $("#dataset-status").textContent=`${state.all.length} anúncios · coleta ${state.dataset.collection_date||"01/10/2026"}`;
     bindEvents();
     setJourneyStep(1);
