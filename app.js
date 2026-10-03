@@ -416,7 +416,7 @@ function bindEvents(){
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail()});
 }
 
-async async function boot(){
+async function boot(){
   try{
     const response=await fetch(DATA_URL,{cache:"no-store"});
     if(!response.ok)throw new Error(`Falha ao carregar dataset (HTTP ${response.status})`);
