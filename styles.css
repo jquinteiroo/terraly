@@ -1127,7 +1127,11 @@ footer {
 }
 
 .leaflet-container {
-  background: #07110d;
+  background: #dfe7e2;
+}
+
+.leaflet-tile-pane {
+  filter: saturate(.72) brightness(.92) contrast(.98);
 }
 
 .leaflet-div-icon {
