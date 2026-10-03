@@ -593,34 +593,6 @@ function renderMarketReading({selic,creditRows}){
       <p>A base local já permite medir distribuição de preços, áreas, bairros, coordenadas repetidas e cobertura de atributos. Histórico temporal local de compra/venda será calculado somente após novos snapshots.</p>
     </div>
   `;
-}){
-  const latestCredit=creditRows.at(-1);
-  const previous3=creditRows.length>=4?creditRows[creditRows.length-4]:null;
-  const credit3m=latestCredit&&previous3?changePercent(latestCredit.value,previous3.value):null;
-
-  const selicLevel=selic>=12?"attention":selic>=8?"neutral":"positive";
-  const selicLabel=selic>=12?"Juros elevados":selic>=8?"Juros intermediários":"Juros mais baixos";
-  const creditLevel=credit3m===null?"neutral":credit3m>5?"positive":credit3m<-5?"attention":"neutral";
-  const creditLabel=credit3m===null?"Sem tendência":"Crédito "+(credit3m>5?"expandindo":credit3m<-5?"retraindo":"estável");
-
-  $("#market-reading").innerHTML=`
-    <div class="market-signal">
-      <div class="market-signal-top"><strong>Condições financeiras</strong><span class="${selicLevel}">${selicLabel}</span></div>
-      <p>Selic anualizada em ${numberBR.format(selic)}%. Juros mais altos tendem a aumentar o custo de capital e financiamento, mas isso não determina sozinho o resultado de um projeto.</p>
-    </div>
-    <div class="market-signal">
-      <div class="market-signal-top"><strong>Crédito imobiliário</strong><span class="${creditLevel}">${creditLabel}</span></div>
-      <p>${credit3m===null?"Ainda não foi possível calcular a variação de três meses.":`As concessões mensais variaram ${credit3m>=0?"+":""}${numberBR.format(credit3m)}% em relação a três meses antes.`}</p>
-    </div>
-    <div class="market-signal">
-      <div class="market-signal-top"><strong>Custo da construção</strong><span class="attention">+7,03% em 12 meses</span></div>
-      <p>SINAPI Brasil, referência agosto/2026. Para estratégia de construir e vender, esse indicador deve entrar nos cenários de custo e stress test.</p>
-    </div>
-    <div class="market-signal">
-      <div class="market-signal-top"><strong>Sazonalidade local</strong><span>Dados insuficientes</span></div>
-      <p>O Terraly ainda tem apenas um snapshot local. Não mostramos “melhor mês para comprar/vender” sem histórico suficiente.</p>
-    </div>
-  `;
 }
 
 async function loadMarketData(){
