@@ -72,16 +72,58 @@
         </div>
 
         <div class="journey-progress" aria-label="Etapas do filtro">
-          <button type="button" class="journey-dot active" data-step-target="1"><span>1</span> Orçamento</button>
-          <button type="button" class="journey-dot" data-step-target="2"><span>2</span> Terreno</button>
-          <button type="button" class="journey-dot" data-step-target="3"><span>3</span> Características</button>
-          <button type="button" class="journey-dot" data-step-target="4"><span>4</span> Qualidade</button>
+          <button type="button" class="journey-dot active" data-step-target="1"><span>1</span> Estratégia</button>
+          <button type="button" class="journey-dot" data-step-target="2"><span>2</span> Orçamento</button>
+          <button type="button" class="journey-dot" data-step-target="3"><span>3</span> Terreno</button>
+          <button type="button" class="journey-dot" data-step-target="4"><span>4</span> Características</button>
+          <button type="button" class="journey-dot" data-step-target="5"><span>5</span> Qualidade</button>
         </div>
 
         <div class="journey-body">
           <section class="journey-step active" data-step="1">
             <div class="step-copy">
               <span class="step-number">01</span>
+              <div>
+                <h3>Qual é a sua estratégia?</h3>
+                <p>Isso define o objetivo da análise. Nesta versão, a estratégia organiza o perfil; ela só passará a influenciar o ranking quando tivermos dados confiáveis para cada tese.</p>
+              </div>
+            </div>
+
+            <div class="strategy-grid" id="strategy-choices">
+              <label class="strategy-card">
+                <input type="radio" name="strategy" value="build_sell" />
+                <span class="strategy-card-body">
+                  <strong>Construir e vender</strong>
+                  <small>Futuramente: potencial construtivo, custo de obra, preço de saída, margem e cenários.</small>
+                </span>
+              </label>
+              <label class="strategy-card">
+                <input type="radio" name="strategy" value="build_rent" />
+                <span class="strategy-card-body">
+                  <strong>Construir e alugar</strong>
+                  <small>Futuramente: custo total, aluguel comparável, yield, vacância e retorno.</small>
+                </span>
+              </label>
+              <label class="strategy-card">
+                <input type="radio" name="strategy" value="appreciation" />
+                <span class="strategy-card-body">
+                  <strong>Comprar para valorização</strong>
+                  <small>Futuramente: evolução de preços, infraestrutura, urbanismo e sinais de expansão.</small>
+                </span>
+              </label>
+              <label class="strategy-card">
+                <input type="radio" name="strategy" value="explore" />
+                <span class="strategy-card-body">
+                  <strong>Ainda estou explorando</strong>
+                  <small>Use os filtros atuais para conhecer o estoque sem assumir uma tese de investimento.</small>
+                </span>
+              </label>
+            </div>
+          </section>
+
+          <section class="journey-step" data-step="2">
+            <div class="step-copy">
+              <span class="step-number">02</span>
               <div>
                 <h3>Quanto você quer investir?</h3>
                 <p>Use a faixa total do terreno. Taxa de condomínio e IPTU são filtros opcionais.</p>
@@ -112,9 +154,9 @@
             </div>
           </section>
 
-          <section class="journey-step" data-step="2">
+          <section class="journey-step" data-step="3">
             <div class="step-copy">
-              <span class="step-number">02</span>
+              <span class="step-number">03</span>
               <div>
                 <h3>Qual tamanho de terreno faz sentido?</h3>
                 <p>Área e condomínio são informações presentes na nossa coleta atual. Testada ainda aparece em poucos anúncios.</p>
@@ -145,9 +187,9 @@
             </div>
           </section>
 
-          <section class="journey-step" data-step="3">
+          <section class="journey-step" data-step="4">
             <div class="step-copy">
-              <span class="step-number">03</span>
+              <span class="step-number">04</span>
               <div>
                 <h3>Quais características importam?</h3>
                 <p>Selecionamos somente itens que aparecem explicitamente nas descrições coletadas.</p>
@@ -180,9 +222,9 @@
             </div>
           </section>
 
-          <section class="journey-step" data-step="4">
+          <section class="journey-step" data-step="5">
             <div class="step-copy">
-              <span class="step-number">04</span>
+              <span class="step-number">05</span>
               <div>
                 <h3>Quanto rigor você quer na triagem?</h3>
                 <p>Esses filtros não dizem que um negócio é bom; eles ajudam a reduzir ruído da base.</p>
