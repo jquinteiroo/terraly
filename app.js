@@ -402,10 +402,20 @@ function changePercent(current,previous){
   return ((current/previous)-1)*100;
 }
 
-async function fetchBCBSeries(code,start,end){
-  const url=`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados?formato=json&dataInicial=${encodeURIComponent(formatDateBR(start))}&dataFinal=${encodeURIComponent(formatDateBR(end))}`;
-  const response=await fetch(url,{headers:{Accept:"application/json"}});
-  if(!response.ok)throw new Error(`BCB série ${code}: HTTP ${response.status}`);
+async async function fetchBCBSeries(code,start,end){
+  const params=new URLSearchParams({
+    code:String(code),
+    start:formatDateBR(start),
+    end:formatDateBR(end)
+  });
+  const response=await fetch(`/api/bcb?${params.toString()}`,{
+    headers:{Accept:"application/json"},
+    cache:"no-store"
+  });
+  if(!response.ok){
+    const detail=await response.text().catch(()=>"");
+    throw new Error(`BCB série ${code}: HTTP ${response.status}${detail?` · ${detail.slice(0,120)}`:""}`);
+  }
   return parseBCBRows(await response.json());
 }
 
