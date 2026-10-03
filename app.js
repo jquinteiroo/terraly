@@ -1,5 +1,5 @@
 const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
-const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
+const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
 const numberBR=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
@@ -383,6 +383,145 @@ function renderChart(rows){
 
 function renderAll(){state.filtered=getFilteredRows();renderStats(state.filtered);renderInsights(state.filtered);renderTable(state.filtered);renderMap(state.filtered);renderChart(state.filtered)}
 
+
+function formatDateBR(date){
+  const d=String(date.getDate()).padStart(2,"0");
+  const m=String(date.getMonth()+1).padStart(2,"0");
+  return `${d}/${m}/${date.getFullYear()}`;
+}
+
+function parseBCBRows(rows){
+  return (rows||[]).map(item=>({
+    date:item.data,
+    value:Number(String(item.valor).replace(",","."))
+  })).filter(item=>Number.isFinite(item.value));
+}
+
+function changePercent(current,previous){
+  if(!Number.isFinite(current)||!Number.isFinite(previous)||previous===0)return null;
+  return ((current/previous)-1)*100;
+}
+
+async function fetchBCBSeries(code,start,end){
+  const url=`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados?formato=json&dataInicial=${encodeURIComponent(formatDateBR(start))}&dataFinal=${encodeURIComponent(formatDateBR(end))}`;
+  const response=await fetch(url,{headers:{Accept:"application/json"}});
+  if(!response.ok)throw new Error(`BCB série ${code}: HTTP ${response.status}`);
+  return parseBCBRows(await response.json());
+}
+
+function renderMarketCreditChart(rows){
+  const canvas=$("#market-credit-chart");
+  if(!canvas||!window.Chart)return;
+  const last24=rows.slice(-24);
+  if(state.marketCreditChart)state.marketCreditChart.destroy();
+  state.marketCreditChart=new Chart(canvas,{
+    type:"line",
+    data:{
+      labels:last24.map(item=>item.date.slice(3)),
+      datasets:[{
+        label:"Concessões",
+        data:last24.map(item=>item.value),
+        borderColor:"#7cf2ad",
+        backgroundColor:"rgba(124,242,173,.08)",
+        fill:true,
+        tension:.28,
+        pointRadius:2,
+        pointHoverRadius:5,
+        borderWidth:2
+      }]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:"#0b1812",
+          borderColor:"rgba(196,255,221,.16)",
+          borderWidth:1,
+          titleColor:"#f4fbf7",
+          bodyColor:"#9ab0a4",
+          callbacks:{label:item=>`${numberBR.format(item.raw)} milhões de R$`}
+        }
+      },
+      scales:{
+        x:{ticks:{color:"#6f867a",font:{size:9},maxRotation:0},grid:{display:false},border:{color:"rgba(196,255,221,.08)"}},
+        y:{ticks:{color:"#6f867a",font:{size:9},callback:v=>`R$ ${numberBR.format(v)} mi`},grid:{color:"rgba(196,255,221,.055)"},border:{color:"rgba(196,255,221,.08)"}}
+      }
+    }
+  });
+}
+
+function renderMarketReading({selic,creditRows}){
+  const latestCredit=creditRows.at(-1);
+  const previous3=creditRows.length>=4?creditRows[creditRows.length-4]:null;
+  const credit3m=latestCredit&&previous3?changePercent(latestCredit.value,previous3.value):null;
+
+  const selicLevel=selic>=12?"attention":selic>=8?"neutral":"positive";
+  const selicLabel=selic>=12?"Juros elevados":selic>=8?"Juros intermediários":"Juros mais baixos";
+  const creditLevel=credit3m===null?"neutral":credit3m>5?"positive":credit3m<-5?"attention":"neutral";
+  const creditLabel=credit3m===null?"Sem tendência":"Crédito "+(credit3m>5?"expandindo":credit3m<-5?"retraindo":"estável");
+
+  $("#market-reading").innerHTML=`
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Condições financeiras</strong><span class="${selicLevel}">${selicLabel}</span></div>
+      <p>Selic anualizada em ${numberBR.format(selic)}%. Juros mais altos tendem a aumentar o custo de capital e financiamento, mas isso não determina sozinho o resultado de um projeto.</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Crédito imobiliário</strong><span class="${creditLevel}">${creditLabel}</span></div>
+      <p>${credit3m===null?"Ainda não foi possível calcular a variação de três meses.":`As concessões mensais variaram ${credit3m>=0?"+":""}${numberBR.format(credit3m)}% em relação a três meses antes.`}</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Custo da construção</strong><span class="attention">+7,03% em 12 meses</span></div>
+      <p>SINAPI Brasil, referência agosto/2026. Para estratégia de construir e vender, esse indicador deve entrar nos cenários de custo e stress test.</p>
+    </div>
+    <div class="market-signal">
+      <div class="market-signal-top"><strong>Sazonalidade local</strong><span>Dados insuficientes</span></div>
+      <p>O Terraly ainda tem apenas um snapshot local. Não mostramos “melhor mês para comprar/vender” sem histórico suficiente.</p>
+    </div>
+  `;
+}
+
+async function loadMarketData(){
+  const status=$("#market-status");
+  if(!status)return;
+  try{
+    const today=new Date();
+    const selicStart=new Date(today); selicStart.setDate(selicStart.getDate()-45);
+    const creditStart=new Date(today); creditStart.setMonth(creditStart.getMonth()-30);
+
+    const [selicRows,creditRows]=await Promise.all([
+      fetchBCBSeries(1178,selicStart,today),
+      fetchBCBSeries(20704,creditStart,today)
+    ]);
+
+    const latestSelic=selicRows.at(-1);
+    const latestCredit=creditRows.at(-1);
+    if(!latestSelic||!latestCredit)throw new Error("Séries do BCB sem observações recentes.");
+
+    $("#market-selic").textContent=`${numberBR.format(latestSelic.value)}% a.a.`;
+    $("#market-selic-meta").textContent=`Último dado disponível: ${latestSelic.date}`;
+
+    const priorCredit=creditRows.at(-2);
+    const monthlyChange=priorCredit?changePercent(latestCredit.value,priorCredit.value):null;
+    $("#market-credit").textContent=`R$ ${numberBR.format(latestCredit.value)} mi`;
+    $("#market-credit-meta").textContent=monthlyChange===null
+      ? `Referência: ${latestCredit.date}`
+      : `Referência: ${latestCredit.date} · ${monthlyChange>=0?"+":""}${numberBR.format(monthlyChange)}% vs. mês anterior`;
+
+    renderMarketCreditChart(creditRows);
+    renderMarketReading({selic:latestSelic.value,creditRows});
+
+    status.classList.remove("error");
+    status.innerHTML='<span class="status-dot"></span><span>BCB atualizado · dados oficiais</span>';
+  }catch(error){
+    console.error("Momento de mercado:",error);
+    status.classList.add("error");
+    status.innerHTML='<span class="status-dot"></span><span>BCB indisponível no momento</span>';
+    $("#market-reading").innerHTML='<div class="market-reading-loading">Não foi possível consultar a API do Banco Central agora. Os demais dados permanecem visíveis com suas referências.</div>';
+  }
+}
+
 function dateWarning(row){
   const values=[row.publishedAt,row.updatedAt].filter(Boolean).map(String);
   if(values.some(v=>v.toLowerCase().includes("há ")))return true;
@@ -440,6 +579,7 @@ async function boot(){
     setJourneyStep(1);
     updateJourneySummary();
     renderAll();
+    loadMarketData();
   }catch(error){
     console.error(error);
     $("main").innerHTML=`<div class="error-box"><strong>Não foi possível carregar o dataset.</strong><p>Abra o projeto por um servidor HTTP (por exemplo, GitHub Pages ou <code>python -m http.server</code>) em vez de abrir o HTML diretamente.</p><small>${escapeHtml(error.message)}</small></div>`;
