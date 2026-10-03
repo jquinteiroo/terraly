@@ -203,12 +203,18 @@ Arquivos da interface:
 
 ### Rodar localmente
 
-Como a interface lê o JSON com `fetch()`, abra o projeto por um servidor HTTP em vez de abrir o `index.html` diretamente.
+A interface usa um pequeno servidor Python local para servir os arquivos e fazer proxy das consultas ao Banco Central. Isso evita o bloqueio de CORS que ocorre quando o navegador tenta acessar diretamente a API do BCB.
 
-Exemplo:
+Execute:
 
 ```bash
-python -m http.server 8000
+python server.py
+```
+
+ou, no Windows:
+
+```powershell
+py server.py
 ```
 
 Depois acesse:
@@ -216,6 +222,8 @@ Depois acesse:
 ```text
 http://localhost:8000
 ```
+
+O servidor usa somente a biblioteca padrão do Python e mantém um cache de 15 minutos para as consultas ao BCB.
 
 A tela também pode ser publicada diretamente com GitHub Pages usando a raiz da branch `master`.
 
@@ -284,3 +292,14 @@ Dados integrados:
 O gráfico de crédito usa os últimos 24 meses disponíveis. A leitura do momento separa condições financeiras, crédito, custo de construção e disponibilidade de histórico local.
 
 O FipeZAP não foi usado como indicador direto de terrenos porque o índice residencial acompanha principalmente apartamentos prontos.
+
+
+#### Por que existe o `server.py`
+
+A API SGS do Banco Central pode não aceitar uma chamada direta feita por JavaScript no navegador por causa de políticas de CORS. Por isso o Terraly consulta o BCB no lado do servidor:
+
+```text
+Browser -> /api/bcb -> server.py -> API do Banco Central
+```
+
+Isso mantém as credenciais inexistentes (a API é pública), melhora a confiabilidade local e evita depender de proxies de terceiros.
