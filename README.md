@@ -224,12 +224,15 @@ A tela também pode ser publicada diretamente com GitHub Pages usando a raiz da 
 
 ### Jornada de busca por perfil
 
-A interface agora possui uma jornada guiada em quatro etapas para montar o perfil do terreno:
+A interface agora possui uma jornada guiada em cinco etapas para montar o perfil do terreno:
 
-1. **Orçamento:** preço mínimo/máximo, limite de R$/m², condomínio e IPTU.
-2. **Terreno:** área mínima/máxima, preferência por condomínio e localização textual.
-3. **Características:** topografia e infraestrutura explicitamente mencionada nos anúncios.
-4. **Qualidade:** opção de ocultar possíveis duplicidades, exigir topografia e mostrar somente extremos estatísticos.
+1. **Estratégia:** construir e vender, construir e alugar, comprar para valorização ou apenas explorar oportunidades.
+2. **Orçamento:** preço mínimo/máximo, limite de R$/m², condomínio e IPTU.
+3. **Terreno:** área mínima/máxima, preferência por condomínio e localização textual.
+4. **Características:** topografia e infraestrutura explicitamente mencionada nos anúncios.
+5. **Qualidade:** opção de ocultar possíveis duplicidades, exigir topografia e mostrar somente extremos estatísticos.
+
+A estratégia já é armazenada no perfil e exibida na interface, mas ainda **não altera o ranking dos terrenos**. Cada tese só deverá influenciar a pontuação quando existirem dados confiáveis para as métricas correspondentes (por exemplo, custo/saída para construir e vender ou aluguel/yield para construir e alugar).
 
 Os filtros usam somente campos presentes no dataset. Zoneamento, potencial construtivo, liquidez, demanda e rentabilidade continuam fora da filtragem até existirem fontes adequadas para sustentá-los.
 
