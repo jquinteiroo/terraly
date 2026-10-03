@@ -1,5 +1,5 @@
 const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
-const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,duplicateIds:new Set(),currentStep:1,profile:{priceMin:null,priceMax:null,ppm2Max:null,condoMax:null,iptuMax:null,areaMin:null,areaMax:null,condoType:"",location:"",topography:"",infrastructure:[],hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
+const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceMin:null,priceMax:null,ppm2Max:null,condoMax:null,iptuMax:null,areaMin:null,areaMax:null,condoType:"",location:"",topography:"",infrastructure:[],hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
 const numberBR=new Intl.NumberFormat("pt-BR",{maximumFractionDigits:2});
@@ -68,6 +68,7 @@ function candidateStatus(row,med){
 
 function readProfileFromForm(){
   return{
+    strategy:document.querySelector('input[name="strategy"]:checked')?.value||"",
     priceMin:numInput("#journey-price-min"),priceMax:numInput("#journey-price-max"),ppm2Max:numInput("#journey-ppm2-max"),
     condoMax:numInput("#journey-condo-max"),iptuMax:numInput("#journey-iptu-max"),areaMin:numInput("#journey-area-min"),areaMax:numInput("#journey-area-max"),
     condoType:$("#journey-condo-type").value,location:$("#journey-location").value.trim(),topography:$("#journey-topography").value,
@@ -85,6 +86,8 @@ function validateProfile(p){
 
 function profileLabels(p){
   const l=[];
+  const strategies={build_sell:"Construir e vender",build_rent:"Construir e alugar",appreciation:"Comprar para valorização",explore:"Explorar oportunidades"};
+  if(p.strategy)l.push(strategies[p.strategy]||p.strategy);
   if(p.priceMin!==null||p.priceMax!==null){
     if(p.priceMin!==null&&p.priceMax!==null)l.push(`${formatMoney(p.priceMin)}–${formatMoney(p.priceMax)}`);
     else if(p.priceMin!==null)l.push(`A partir de ${formatMoney(p.priceMin)}`);
@@ -120,12 +123,12 @@ function updateJourneySummary(){
 }
 
 function setJourneyStep(step){
-  state.currentStep=Math.min(4,Math.max(1,step));
+  state.currentStep=Math.min(5,Math.max(1,step));
   document.querySelectorAll(".journey-step").forEach(s=>s.classList.toggle("active",Number(s.dataset.step)===state.currentStep));
   document.querySelectorAll(".journey-dot").forEach(b=>b.classList.toggle("active",Number(b.dataset.stepTarget)===state.currentStep));
   $("#journey-back").disabled=state.currentStep===1;
-  $("#journey-next").classList.toggle("hidden",state.currentStep===4);
-  $("#journey-apply").classList.toggle("hidden",state.currentStep!==4);
+  $("#journey-next").classList.toggle("hidden",state.currentStep===5);
+  $("#journey-apply").classList.toggle("hidden",state.currentStep!==5);
 }
 
 function applyProfile(){
@@ -137,6 +140,7 @@ function applyProfile(){
 
 function resetJourneyForm(){
   ["#journey-price-min","#journey-price-max","#journey-ppm2-max","#journey-condo-max","#journey-iptu-max","#journey-area-min","#journey-area-max","#journey-location"].forEach(s=>{const e=$(s);if(e)e.value=""});
+  document.querySelectorAll('input[name="strategy"]').forEach(i=>i.checked=false);
   $("#journey-condo-type").value="";$("#journey-topography").value="";
   $("#journey-hide-duplicates").checked=false;$("#journey-require-topography").checked=false;$("#journey-only-candidates").checked=false;
   document.querySelectorAll("#infrastructure-choices input").forEach(i=>i.checked=false);
