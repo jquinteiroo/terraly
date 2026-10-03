@@ -61,6 +61,102 @@
         </div>
       </section>
 
+
+      <section class="market-section" id="market">
+        <div class="market-header">
+          <div>
+            <span class="section-kicker">Momento de mercado</span>
+            <h2>Como estão as condições para o mercado imobiliário?</h2>
+            <p>
+              Contexto macroeconômico e de construção para apoiar a análise. Os indicadores abaixo não são recomendação de compra ou venda.
+            </p>
+          </div>
+          <div class="market-status" id="market-status">
+            <span class="status-dot"></span>
+            <span>Atualizando dados oficiais…</span>
+          </div>
+        </div>
+
+        <div class="market-grid">
+          <article class="market-card">
+            <div class="market-card-top">
+              <span class="market-label">Selic anualizada</span>
+              <span class="source-badge">BCB · SGS 1178</span>
+            </div>
+            <strong class="market-value" id="market-selic">—</strong>
+            <div class="market-meta" id="market-selic-meta">Carregando dado mais recente…</div>
+          </article>
+
+          <article class="market-card">
+            <div class="market-card-top">
+              <span class="market-label">Crédito imobiliário PF</span>
+              <span class="source-badge">BCB · SGS 20704</span>
+            </div>
+            <strong class="market-value" id="market-credit">—</strong>
+            <div class="market-meta" id="market-credit-meta">Carregando concessões mensais…</div>
+          </article>
+
+          <article class="market-card">
+            <div class="market-card-top">
+              <span class="market-label">Custo da construção</span>
+              <span class="source-badge">SINAPI · IBGE</span>
+            </div>
+            <strong class="market-value">+7,03%</strong>
+            <div class="market-meta">12 meses · referência ago/2026 · variação mensal +0,44%</div>
+          </article>
+
+          <article class="market-card">
+            <div class="market-card-top">
+              <span class="market-label">Histórico local Terraly</span>
+              <span class="source-badge">Indaiatuba</span>
+            </div>
+            <strong class="market-value">1 snapshot</strong>
+            <div class="market-meta">Ainda insuficiente para sazonalidade local ou tempo de mercado.</div>
+          </article>
+        </div>
+
+        <div class="market-analysis-grid">
+          <article class="panel market-chart-panel">
+            <div class="panel-heading compact">
+              <div>
+                <span class="section-kicker">Crédito</span>
+                <h2>Concessões de financiamento imobiliário</h2>
+              </div>
+              <span class="microcopy">Últimos 24 meses · milhões de R$</span>
+            </div>
+            <div class="market-chart-wrap">
+              <canvas id="market-credit-chart"></canvas>
+            </div>
+          </article>
+
+          <article class="panel market-reading-panel">
+            <div class="panel-heading compact">
+              <div>
+                <span class="section-kicker">Leitura</span>
+                <h2>O que os indicadores dizem agora</h2>
+              </div>
+            </div>
+            <div class="market-reading" id="market-reading">
+              <div class="market-reading-loading">Aguardando dados do Banco Central…</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="market-source-note">
+          <strong>Fontes e limitações</strong>
+          <p>
+            Selic e crédito são consultados diretamente da API pública do Banco Central quando a página é aberta.
+            O SINAPI está nesta versão como snapshot oficial de agosto/2026. O FipeZAP não foi usado como proxy de terreno:
+            seu índice residencial acompanha principalmente apartamentos prontos e não representa diretamente lotes.
+          </p>
+          <div class="market-links">
+            <a href="https://dadosabertos.bcb.gov.br/dataset/1178-taxa-de-juros---selic-anualizada-base-252" target="_blank" rel="noreferrer">Fonte Selic ↗</a>
+            <a href="https://dadosabertos.bcb.gov.br/dataset/20704-concessoes-de-credito-com-recursos-direcionados---pessoas-fisicas---financiamento-imobiliario" target="_blank" rel="noreferrer">Fonte crédito ↗</a>
+            <a href="https://www.ibge.gov.br/indicadores/sinapi" target="_blank" rel="noreferrer">Fonte SINAPI ↗</a>
+          </div>
+        </div>
+      </section>
+
       <section class="journey-panel" id="journey">
         <div class="journey-intro">
           <div>
