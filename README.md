@@ -256,4 +256,4 @@ A jornada passou a usar seletores pré-definidos para os campos mais importantes
 
 Bairros e condomínios são preenchidos dinamicamente a partir do dataset carregado.
 
-O mapa passou a usar um basemap escuro via CARTO com fallback para OpenStreetMap e marcadores de preço no estilo de portais imobiliários. A troca foi feita para melhorar legibilidade, reduzir o problema visual de tiles faltantes e integrar o mapa à identidade do Terraly.
+O mapa usa tiles públicos do OpenStreetMap, sem API key, com marcadores de preço no estilo de portais imobiliários. Essa escolha evita dependência de provedor com chave de API e mantém o protótipo simples para execução local.
