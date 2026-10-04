@@ -1,0 +1,46 @@
+name: Terraly data sweep
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * 1,4"
+      timezone: "America/Sao_Paulo"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: terraly-data-sweep
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run incremental collector
+        env:
+          FIRECRAWL_API_KEY: \${{ secrets.FIRECRAWL_API_KEY }}
+        run: python collector/run.py --config collector/config.json
+
+      - name: Commit new observations
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No dataset changes to commit."
+            exit 0
+          fi
+
+          git config user.name "terraly-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/auto reports/collector_latest.md
+          git commit -m "data: automated Terraly sweep"
+          git push
