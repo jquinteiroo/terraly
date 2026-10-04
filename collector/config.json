@@ -1,0 +1,11 @@
+{
+  "source": "vivareal",
+  "city": "Indaiatuba",
+  "state": "SP",
+  "search_url": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/",
+  "max_search_pages": 5,
+  "max_enrich_per_run": 10,
+  "request_timeout_seconds": 90,
+  "sleep_between_requests_seconds": 1.2,
+  "timezone": "America/Sao_Paulo"
+}
