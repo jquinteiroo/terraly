@@ -345,3 +345,71 @@ Metodologia:
 - barras abaixo de 100 indicam meses historicamente abaixo da média.
 
 O gráfico só aparece quando houver pelo menos dois anos úteis de histórico carregado. Se a aplicação estiver usando apenas o fallback curto, a interface informa que não há histórico suficiente em vez de gerar valores artificiais.
+
+
+## Varredura automática de dados
+
+O Terraly possui um coletor incremental em `collector/run.py` e um workflow do GitHub Actions em `.github/workflows/collect-data.yml`.
+
+### Como funciona
+
+1. Varre primeiro as páginas de busca configuradas.
+2. Descobre os IDs/URLs dos terrenos.
+3. Compara a observação atual com o snapshot anterior.
+4. Enriquece somente anúncios novos, alterados ou ainda incompletos.
+5. Salva:
+   - `data/auto/latest.json` — base atual;
+   - `data/auto/snapshots/<data-hora>.json` — histórico imutável;
+   - `data/auto/history.jsonl` — resumo temporal das execuções;
+   - `reports/collector_latest.md` — relatório da última varredura.
+6. O dashboard tenta carregar `data/auto/latest.json` primeiro e usa o dataset inicial como fallback.
+
+A rotina **nunca interpreta anúncio não observado como vendido**. Se nenhuma URL for encontrada na busca, a execução falha e não grava um snapshot vazio.
+
+### Frequência
+
+O workflow está configurado para rodar às **07:17 (America/Sao_Paulo), segundas e quintas**, além de permitir execução manual pelo botão **Run workflow** no GitHub Actions.
+
+GitHub pode atrasar execuções agendadas em períodos de alta carga; o horário foi colocado fora do início da hora para reduzir esse risco.
+
+### Firecrawl
+
+O coletor utiliza o endpoint de scrape do Firecrawl:
+
+- páginas de busca: formato `links`;
+- anúncios novos/alterados/incompletos: extração estruturada em JSON;
+- `maxAge: 0` para pedir conteúdo fresco.
+
+Para uso recorrente, configure no GitHub:
+
+`Settings → Secrets and variables → Actions → New repository secret`
+
+Nome:
+
+`FIRECRAWL_API_KEY`
+
+O código também aceita execução sem chave, mas para automação recorrente a chave da conta Firecrawl é recomendada por limites e estabilidade.
+
+### Controle de custo
+
+A configuração atual limita cada execução a:
+
+- **5 páginas de busca**;
+- no máximo **10 anúncios enriquecidos**.
+
+Isso impede que uma única varredura dispare centenas de extrações estruturadas. Os limites ficam em `collector/config.json` e podem ser aumentados gradualmente depois de validarmos a coleta automática.
+
+### Rodar manualmente no computador
+
+No diretório do projeto:
+
+```powershell
+$env:FIRECRAWL_API_KEY="fc-sua-chave"
+python collector/run.py --config collector/config.json
+```
+
+Depois rode o site normalmente:
+
+```powershell
+python server.py
+```
