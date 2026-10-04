@@ -1,4 +1,4 @@
-const DATA_URL="./data/raw/vivareal_indaiatuba_2026-10-01.json";
+const DATA_URLS=["./data/auto/latest.json","./data/raw/vivareal_indaiatuba_2026-10-01.json"];
 const state={dataset:null,all:[],filtered:[],map:null,markerLayer:null,chart:null,marketCreditChart:null,marketSeasonalityChart:null,marketFallbackUsed:false,duplicateIds:new Set(),currentStep:1,profile:{strategy:"",priceRange:"",ppm2Range:"",condoCost:"",iptuCost:"",areaRange:"",neighborhood:"",condominium:"",condoType:"",topography:"",infrastructure:"",feature:"",hideDuplicates:false,requireTopography:false,onlyCandidates:false}};
 const $=s=>document.querySelector(s);
 const brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0});
@@ -763,16 +763,33 @@ function bindEvents(){
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail()});
 }
 
+async function loadBestDataset(){
+  let lastError=null;
+  for(const url of DATA_URLS){
+    try{
+      const response=await fetch(url,{cache:"no-store"});
+      if(!response.ok)throw new Error(`HTTP ${response.status}`);
+      return{url,data:await response.json()};
+    }catch(error){
+      lastError=error;
+    }
+  }
+  throw lastError||new Error("Nenhum dataset disponível.");
+}
+
 async function boot(){
   try{
-    const response=await fetch(DATA_URL,{cache:"no-store"});
-    if(!response.ok)throw new Error(`Falha ao carregar dataset (HTTP ${response.status})`);
-    state.dataset=await response.json();
+    const loaded=await loadBestDataset();
+    state.dataset=loaded.data;
     state.all=(state.dataset.records||[]).map(normalizeRecord);
     state.duplicateIds=buildDuplicateFlags(state.all);
     populateDynamicDropdowns();
     renderLocalMarketCoverage();
-    $("#dataset-status").textContent=`${state.all.length} anúncios · coleta ${state.dataset.collection_date||"01/10/2026"}`;
+
+    const collected=state.dataset.collected_at||state.dataset.collection_date||"data não informada";
+    const mode=loaded.url.includes("/auto/")?"automático":"dataset inicial";
+    $("#dataset-status").textContent=`${state.all.length} anúncios · ${mode} · coleta ${collected}`;
+
     bindEvents();
     setJourneyStep(1);
     updateJourneySummary();
@@ -780,7 +797,7 @@ async function boot(){
     loadMarketData();
   }catch(error){
     console.error(error);
-    $("main").innerHTML=`<div class="error-box"><strong>Não foi possível carregar o dataset.</strong><p>Abra o projeto por um servidor HTTP (por exemplo, GitHub Pages ou <code>python -m http.server</code>) em vez de abrir o HTML diretamente.</p><small>${escapeHtml(error.message)}</small></div>`;
+    $("main").innerHTML=`<div class="error-box"><strong>Não foi possível carregar o dataset.</strong><p>Abra o projeto por um servidor HTTP (por exemplo, <code>python server.py</code>) em vez de abrir o HTML diretamente.</p><small>${escapeHtml(error.message)}</small></div>`;
     $("#dataset-status").textContent="Erro ao carregar dataset";
   }
 }
