@@ -4,7 +4,7 @@
   "source_search_url": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/",
   "city": "Indaiatuba",
   "state": "SP",
-  "collected_at": "2026-10-29T16:55:15+00:00",
+  "collected_at": "2026-11-02T20:20:43+00:00",
   "timezone": "America/Sao_Paulo",
   "methodology": "Busca incremental: varre páginas de resultado primeiro e enriquece somente anúncios novos, alterados ou ainda incompletos.",
   "baseline_source": "data/auto/latest.json",
@@ -19,170 +19,125 @@
   ],
   "events": {
     "new_listing_ids": [
-      "2483819402",
+      "2525537210",
+      "2557686202",
+      "2633287853",
+      "2743767014",
+      "2781281414",
+      "2811278819",
+      "2823520262",
+      "2832444434",
+      "2857573879",
+      "2871686304",
+      "2874592441",
+      "2875730506",
+      "2888711746",
+      "2888713988",
+      "2893222593",
+      "2893988832",
+      "2896538046",
+      "2896540476",
+      "2896540778",
+      "2900078284",
+      "2900478864",
+      "2900480831",
+      "2900482669",
+      "2900483957",
+      "2900484650",
+      "2900484945",
+      "2900485279",
+      "2900485304",
+      "2900487308",
+      "2900487427",
+      "2900489394",
+      "2901206821",
+      "2902108440",
+      "2902108936",
+      "2902109564",
+      "2902112631",
+      "2903376333",
+      "2903397505",
+      "2906794800",
+      "2907836016",
+      "2909302088",
+      "2909305053",
+      "2909307882",
+      "2910982953",
+      "2911920915",
+      "2911921722",
+      "2912056259",
+      "2912447680",
+      "2912455017",
+      "2912947287",
+      "2915411699",
+      "2916840162",
+      "2916841149",
+      "2917466152",
+      "2917508746",
+      "2918592985",
+      "2918935086",
+      "2919534014"
+    ],
+    "changed_listing_ids": [],
+    "not_observed_listing_ids": [
       "2490500979",
-      "2656790002",
       "2811266865",
-      "2818852122",
       "2840657821",
       "2856183332",
       "2870866781",
-      "2871686705",
       "2871688296",
       "2880154180",
-      "2881467444",
-      "2888710596",
       "2888712408",
       "2888713128",
       "2888713675",
-      "2888713681",
-      "2888713691",
-      "2888713987",
-      "2891967377",
-      "2894950773",
       "2896540177",
       "2896540398",
       "2896621982",
-      "2899422377",
       "2899764378",
-      "2900475313",
       "2900477535",
       "2900480355",
       "2900481239",
-      "2900481318",
+      "2900481537",
       "2900481657",
       "2900482895",
-      "2900483255",
       "2900484171",
       "2900484176",
       "2900484211",
-      "2900484506",
       "2900484743",
-      "2900485190",
+      "2900484981",
       "2900485555",
       "2900485558",
-      "2900485725",
       "2900486094",
       "2900486156",
+      "2900486277",
       "2900486507",
       "2900486537",
       "2900486647",
-      "2900487382",
       "2900487425",
       "2900487532",
       "2900487752",
-      "2900488761",
+      "2900487778",
       "2900489034",
       "2900489883",
-      "2900491389",
+      "2902146506",
       "2902271312",
       "2902272210",
       "2902746297",
+      "2909302760",
       "2909306541",
       "2912449474",
-      "2913137624",
       "2916838494",
-      "2916838776",
       "2916839974",
       "2916840161",
-      "2916841140",
       "2916841234",
       "2916841337",
-      "2916904634",
       "2917420954",
+      "2917605236",
+      "2917652653",
+      "2917908116",
       "2918006933",
       "2918990240",
-      "2919093874",
-      "2919549346"
-    ],
-    "changed_listing_ids": [
-      "2900480316",
-      "2900481537",
-      "2900484159",
-      "2900484981",
-      "2900486277",
-      "2900486278",
-      "2900487778",
-      "2901369020"
-    ],
-    "not_observed_listing_ids": [
-      "2694012220",
-      "2760622448",
-      "2766490424",
-      "2824055642",
-      "2841977162",
-      "2863747357",
-      "2877352294",
-      "2880153308",
-      "2892233435",
-      "2892235465",
-      "2892235691",
-      "2892238070",
-      "2892240912",
-      "2892242609",
-      "2892243787",
-      "2892244076",
-      "2893134689",
-      "2893222593",
-      "2896536268",
-      "2900479140",
-      "2900480504",
-      "2900481438",
-      "2900482041",
-      "2900482669",
-      "2900484388",
-      "2900485279",
-      "2900485511",
-      "2900486559",
-      "2900488025",
-      "2900490086",
-      "2902266318",
-      "2903376333",
-      "2906406621",
-      "2906793168",
-      "2907836016",
-      "2909302088",
-      "2909303159",
-      "2909305684",
-      "2909306965",
-      "2909307868",
-      "2909307877",
-      "2909307939",
-      "2909309813",
-      "2911914774",
-      "2911916078",
-      "2911916102",
-      "2911918723",
-      "2911918731",
-      "2911920231",
-      "2911920838",
-      "2911921430",
-      "2911921814",
-      "2911980030",
-      "2911980752",
-      "2912951222",
-      "2915311972",
-      "2915414651",
-      "2915665942",
-      "2915766556",
-      "2916381599",
-      "2916729748",
-      "2916769873",
-      "2916841142",
-      "2917540782",
-      "2917591874",
-      "2917789042",
-      "2917888420",
-      "2918046259",
-      "2918046262",
-      "2918047355",
-      "2918047759",
-      "2918047862",
-      "2918478812",
-      "2918480028",
-      "2918592985",
-      "2918601338",
-      "2918627509"
+      "2919093874"
     ],
     "enrichment_errors": {}
   },
@@ -190,7 +145,7 @@
     {
       "listing_id": "2483819402",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-panorama-bairros-indaiatuba-359m2-venda-RS200000-id-2483819402/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 200000,
@@ -242,61 +197,194 @@
         "built_area_m2": null
       },
       "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2525537210",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-vila-rubens-bairros-indaiatuba-200m2-venda-RS365000-id-2525537210/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 365000,
+        "area_m2": 200,
+        "price_per_m2_brl": 1825.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": 150,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": 120,
+        "iptu_exempt": false,
+        "neighborhood": "Vila Rubens",
+        "address_displayed": "Rua José Milanesi - Vila Rubens, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 200m² - Vila Rubens",
+        "description": "CONDOMÍNIO PARK GRAN RESERVE INDAIATUBA - PRONTO PARA CONSTRUIR",
+        "price_brl": 365000,
+        "area_m2": 200,
+        "condo_fee_brl": 150,
+        "condo_fee_exempt": null,
+        "iptu_brl": 120,
+        "iptu_exempt": null,
+        "address_displayed": "Rua José Milanesi - Vila Rubens, Indaiatuba - SP",
+        "street": "Rua José Milanesi",
+        "neighborhood": "Vila Rubens",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": "PARK GRAN RESERVE INDAIATUBA",
+        "advertiser": "JRW Imóveis",
+        "creci": "162789-F-SP",
+        "lot_dimensions": "250,00 m²",
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "Portaria 24h",
+          "Guarita blindada",
+          "Salão de festas"
+        ],
+        "condominium_features": [
+          "Quadra de tênis",
+          "Espaço fitness",
+          "Futebol society",
+          "Quiosques com churrasqueira",
+          "Parquinho infantil",
+          "Trilhas para caminhada"
+        ],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2021-06-30T00:00:00Z",
+        "updated_at": "2023-10-13T00:00:00Z",
+        "photo_count": 22,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": true
+      }
+    },
+    {
+      "listing_id": "2557686202",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-alto-de-itaici-bairros-indaiatuba-335m2-venda-RS450000-id-2557686202/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 450000,
+        "area_m2": 335,
+        "price_per_m2_brl": 1343.28,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Alto de Itaici",
+        "address_displayed": "Rua Murta, Jardim Alto de Itaici, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 335m² - Jardim Alto de Itaici",
+        "description": "TC00434 Cond.Alto de Itaici-AT:335,56m², Lindo terreno excelente topografia!!",
+        "price_brl": 450000,
+        "area_m2": 335,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": null,
+        "iptu_brl": null,
+        "iptu_exempt": null,
+        "address_displayed": "Rua Murta, Jardim Alto de Itaici, Indaiatuba - SP",
+        "street": "Rua Murta",
+        "neighborhood": "Jardim Alto de Itaici",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": null,
+        "advertiser": "Rita De Cássia Gama Gonçalves Barrufet",
+        "creci": "122168-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [
+          "área de lazer completa",
+          "piscina",
+          "salão de festas",
+          "campo de futebol",
+          "playground",
+          "quadra de tênis",
+          "água tratado no condomínio"
+        ],
+        "condominium_features": [
+          "pequeno",
+          "tranquilo",
+          "bem arborizado",
+          "casas modernas"
+        ],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2022-04-07",
+        "updated_at": null,
+        "photo_count": 6,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
         "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": true
       }
     },
     {
-      "listing_id": "2490500979",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-270m2-venda-RS310000-id-2490500979/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2633287853",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS175000-id-2633287853/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 310000,
-        "area_m2": 270,
-        "price_per_m2_brl": 1148.15,
+        "price_brl": 175000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1166.67,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
         "iptu_displayed": null,
-        "iptu_brl": 403,
+        "iptu_brl": 120,
         "iptu_exempt": false,
-        "neighborhood": "Jardim Paulista",
-        "address_displayed": "Avenida Higienópolis, Quadra B - Jardim Paulista, Indaiatuba - SP",
+        "neighborhood": "Jardim Casablanca",
+        "address_displayed": "Rua José da Silva Bernabé - Jardim Casablanca, Indaiatuba - SP",
         "city": "Indaiatuba",
         "state": "SP"
       },
       "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 270m² - Jardim Paulista",
-        "description": "Terreno para uso residencial e/ou comercial no Jardim Paulista II, Indaiatuba/SP. Localizado na avenida Higienopolis, próximo a padarias, farmácias, loja de material de construção e comercios em geral. Bem localizado, com fácil acesso, o terreno se encontra limpo, planado e com calçada, pronto para construir.",
-        "price_brl": 310000,
-        "area_m2": 270,
+        "title": "Lote/Terreno à venda, 150m² - Jardim Casablanca",
+        "description": "Lote/Terreno à venda, 150m² - Jardim Casablanca. ÓTIMA TOPOGRAFIA, ÓTIMA LOCALIZAÇÃO, DOCUMENTAÇÃO OK, ACEITA FINANCIAMENTO BANCÁRIO, ESTUDA PERMUTA.",
+        "price_brl": 175000,
+        "area_m2": 150,
         "condo_fee_brl": null,
         "condo_fee_exempt": null,
-        "iptu_brl": 403,
+        "iptu_brl": 120,
         "iptu_exempt": null,
-        "address_displayed": "Avenida Higienópolis, Quadra B - Jardim Paulista, Indaiatuba - SP",
-        "street": "Avenida Higienópolis",
-        "neighborhood": "Jardim Paulista",
+        "address_displayed": "Rua José da Silva Bernabé - Jardim Casablanca, Indaiatuba - SP",
+        "street": "Rua José da Silva Bernabé",
+        "neighborhood": "Jardim Casablanca",
         "city": "Indaiatuba",
         "state": "SP",
         "condominium_name": null,
-        "advertiser": "Orlando Americo Neto",
-        "creci": null,
+        "advertiser": "JRW Imóveis",
+        "creci": "162789-F-SP",
         "lot_dimensions": null,
         "frontage": null,
-        "topography": "Plano",
-        "infrastructure": [
-          "Rede de água e esgoto",
-          "Rua asfaltada"
-        ],
+        "topography": "ÓTIMA TOPOGRAFIA",
+        "infrastructure": [],
         "condominium_features": [],
         "latitude": null,
         "longitude": null,
-        "published_at": "2020-07-24",
-        "updated_at": null,
-        "photo_count": 6,
+        "published_at": "2023-05-18T00:00:00Z",
+        "updated_at": "2023-10-15T00:00:00Z",
+        "photo_count": 16,
         "has_existing_improvement": null,
         "built_area_m2": null
       },
@@ -309,7 +397,7 @@
     {
       "listing_id": "2656790002",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS170000-id-2656790002/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 170000,
@@ -317,7 +405,7 @@
         "price_per_m2_brl": 1133.33,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
-        "condo_fee_exempt": true,
+        "condo_fee_exempt": false,
         "iptu_displayed": null,
         "iptu_brl": null,
         "iptu_exempt": false,
@@ -375,63 +463,185 @@
         "built_area_m2": null
       },
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2743767014",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-150m2-venda-RS165000-id-2743767014/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 165000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1100.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Campo Bonito",
+        "address_displayed": "Rua Irmã Maria Angélica - Parque Campo Bonito, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Campo Bonito",
+        "description": "",
+        "price_brl": 165000,
+        "area_m2": 150,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": null,
+        "iptu_brl": null,
+        "iptu_exempt": null,
+        "address_displayed": "Rua Irmã Maria Angélica - Parque Campo Bonito, Indaiatuba - SP",
+        "street": "Rua Irmã Maria Angélica",
+        "neighborhood": "Parque Campo Bonito",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": null,
+        "advertiser": "Lopes Alphavilly",
+        "creci": "33156-J-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2022-09-20T00:00:00Z",
+        "updated_at": "2024-09-20T00:00:00Z",
+        "photo_count": 8,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": true
       }
     },
     {
-      "listing_id": "2811266865",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-210m2-venda-RS340000-id-2811266865/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2781281414",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-dona-maria-candida-bairros-indaiatuba-300m2-venda-RS615000-id-2781281414/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 340000,
-        "area_m2": 210,
-        "price_per_m2_brl": 1619.05,
+        "price_brl": 615000,
+        "area_m2": 300,
+        "price_per_m2_brl": 2050.0,
         "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": true,
+        "condo_fee_brl": 165,
+        "condo_fee_exempt": false,
         "iptu_displayed": null,
-        "iptu_brl": 99,
+        "iptu_brl": null,
         "iptu_exempt": false,
-        "neighborhood": "Jardim Paulista",
-        "address_displayed": "Rua Anhangabaú, 760 - Jardim Paulista, Indaiatuba - SP",
+        "neighborhood": "Jardim Residencial Dona Maria Cândida",
+        "address_displayed": "Rua Carlos Eduardo Lanzoni Ferreira, Lote 5 - Jardim Residencial Dona Maria Cândida, Indaiatuba - SP",
         "city": "Indaiatuba",
         "state": "SP"
       },
       "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 210m² - Jardim Paulista",
-        "description": "Lote/Terreno à venda no bairro Jardim Paulista I em Indaiatuba/SP.",
-        "price_brl": 340000,
-        "area_m2": 210,
+        "title": "Lote/Terreno à venda, 300m² - Jardim Residencial Dona Maria Cândida",
+        "description": "TERRENO NO CONDOMINIO RESIDENCIAL DONA MARIA CANDIDA INDAIATUBA: \n- Metragem 300 m²; \n- Local privilegiado dentro do condomínio - próximo às duas portarias e à área de lazer; \n- O condomínio está muito bem localizado, a 3 minutos do Parque Ecológico e Padaria Suiça e a 8 minutos do centro de Indaiatuba, próximo a diversos pontos comerciais, serviços e escolas. \n- Portaria e segurança 24 horas; \n- Área de lazer com: dois salões de festas (banheiros e quiosque com churrasqueira); uma quadra poliesportiva; duas quadras de tênis; um campo de futebol; piscina; playground; e área verde.",
+        "price_brl": 615000,
+        "area_m2": 300,
+        "condo_fee_brl": 165,
+        "condo_fee_exempt": null,
+        "iptu_brl": null,
+        "iptu_exempt": null,
+        "address_displayed": "Rua Carlos Eduardo Lanzoni Ferreira, Lote 5 - Jardim Residencial Dona Maria Cândida, Indaiatuba - SP",
+        "street": "Rua Carlos Eduardo Lanzoni Ferreira",
+        "neighborhood": "Jardim Residencial Dona Maria Cândida",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": "Condomínio Residencial Dona Maria Cândida",
+        "advertiser": "Fernando Torres",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": "plana (leve declividade)",
+        "infrastructure": [
+          "Portaria e segurança 24 horas",
+          "Área de lazer com dois salões de festas",
+          "Quadra poliesportiva",
+          "Duas quadras de tênis",
+          "Campo de futebol",
+          "Piscina",
+          "Playground",
+          "Área verde",
+          "Cabeamento elétrico subterrâneo"
+        ],
+        "condominium_features": [],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2025-02-23",
+        "updated_at": "2026-10-18",
+        "photo_count": 15,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": true
+      }
+    },
+    {
+      "listing_id": "2811278819",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-vila-dos-canarios-bairros-indaiatuba-157m2-venda-RS200000-id-2811278819/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 200000,
+        "area_m2": 157,
+        "price_per_m2_brl": 1273.89,
+        "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": true,
-        "iptu_brl": 99,
+        "iptu_displayed": null,
+        "iptu_brl": 98,
+        "iptu_exempt": false,
+        "neighborhood": "Vila dos Canarios",
+        "address_displayed": "Rua Laudelino Ghiraldelo - Vila dos Canarios, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 157m² - Vila dos Canarios",
+        "description": "Lote de esquina - Estuda permuta de carro",
+        "price_brl": 200000,
+        "area_m2": 157,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_brl": 98,
         "iptu_exempt": null,
-        "address_displayed": "Rua Anhangabaú, 760 - Jardim Paulista, Indaiatuba - SP",
-        "street": "Rua Anhangabaú",
-        "neighborhood": "Jardim Paulista",
+        "address_displayed": "Rua Laudelino Ghiraldelo - Vila dos Canarios, Indaiatuba - SP",
+        "street": "Rua Laudelino Ghiraldelo",
+        "neighborhood": "Vila dos Canarios",
         "city": "Indaiatuba",
         "state": "SP",
         "condominium_name": null,
-        "advertiser": "Gps Imóveis",
-        "creci": "19407-J-SP",
+        "advertiser": "Bonfim Negócios Imobiliários",
+        "creci": "39821-J-SP",
         "lot_dimensions": null,
         "frontage": null,
-        "topography": "Plano",
+        "topography": null,
         "infrastructure": [],
         "condominium_features": [],
         "latitude": null,
         "longitude": null,
         "published_at": "2025-06-04T00:00:00Z",
-        "updated_at": "2025-06-05T00:00:00Z",
-        "photo_count": 5,
+        "updated_at": "2025-06-06T00:00:00Z",
+        "photo_count": 3,
         "has_existing_improvement": null,
         "built_area_m2": null
       },
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
         "status": "observed",
         "enriched_this_run": true
       }
@@ -439,7 +649,7 @@
     {
       "listing_id": "2818852122",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-park-gran-reserve-bairros-indaiatuba-300m2-venda-RS424000-id-2818852122/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 424000,
@@ -489,107 +699,41 @@
       "collector": {
         "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
-        "enriched_this_run": true
+        "enriched_this_run": false
       }
     },
     {
-      "listing_id": "2840657821",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-areal-bairros-indaiatuba-250m2-venda-RS380250-id-2840657821/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2823520262",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-3-bairros-indaiatuba-150m2-venda-RS280000-id-2823520262/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 380250,
-        "area_m2": 250,
-        "price_per_m2_brl": 1521.0,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": true,
         "iptu_displayed": null,
         "iptu_brl": null,
         "iptu_exempt": false,
-        "neighborhood": "Chácara Areal",
-        "address_displayed": "Avenida Engenheiro Fábio Roberto Barnabé, S/N - Chácara Areal, Indaiatuba - SP",
+        "neighborhood": "Jardim Paulista 3",
+        "address_displayed": "Rua Tucuruvi, 42 - Jardim Paulista 3, Indaiatuba - SP",
         "city": "Indaiatuba",
         "state": "SP"
       },
       "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 250m² - Chácara Areal",
-        "description": "Lote/Terreno à venda, 250m² - Chácara Areal",
-        "price_brl": 380250,
-        "area_m2": 250,
+        "title": "Lote/Terreno à venda, 150m² - Jardim Paulista 3",
+        "description": "Loteamento aberto com terrenos a partir de 150 m², pronto para receber o seu projeto! Localização privilegiada. 595 lotes no total. 477 lotes residenciais. 118 lotes de uso misto (comercial e residencial). Infraestrutura entregue completa!",
+        "price_brl": 280000,
+        "area_m2": 150,
         "condo_fee_brl": null,
         "condo_fee_exempt": true,
         "iptu_brl": null,
         "iptu_exempt": null,
-        "address_displayed": "Avenida Engenheiro Fábio Roberto Barnabé, S/N - Chácara Areal, Indaiatuba - SP",
-        "street": "Avenida Engenheiro Fábio Roberto Barnabé",
-        "neighborhood": "Chácara Areal",
-        "city": "Indaiatuba",
-        "state": "SP",
-        "condominium_name": null,
-        "advertiser": "Grupo Avalia",
-        "creci": "27154-J-SP",
-        "lot_dimensions": null,
-        "frontage": null,
-        "topography": null,
-        "infrastructure": [
-          "Portaria 24h com controle de acesso",
-          "Lago central e mirante",
-          "Pistas de caminhada arborizadas",
-          "Áreas de lazer e convivência",
-          "Espaços institucionais e preservação ambiental"
-        ],
-        "condominium_features": [
-          "Aceita animais",
-          "Piscina",
-          "Salão de festas"
-        ],
-        "latitude": null,
-        "longitude": null,
-        "published_at": "2022-10-01T00:00:00Z",
-        "updated_at": "2023-10-01T00:00:00Z",
-        "photo_count": 11,
-        "has_existing_improvement": null,
-        "built_area_m2": null
-      },
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": true
-      }
-    },
-    {
-      "listing_id": "2856183332",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-152m2-venda-RS165000-id-2856183332/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 165000,
-        "area_m2": 152,
-        "price_per_m2_brl": 1085.53,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": true,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": "Parque Barnabé",
-        "address_displayed": "Rua Rodrigo Augusto Cardoso - Parque Barnabé, Indaiatuba - SP",
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 152m² - Parque Barnabé",
-        "description": "Terreno para Venda no Loteamento Aberto Smart City em Indaiatuba S.P",
-        "price_brl": 165000,
-        "area_m2": 152,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": true,
-        "iptu_brl": null,
-        "iptu_exempt": null,
-        "address_displayed": "Rua Rodrigo Augusto Cardoso - Parque Barnabé, Indaiatuba - SP",
-        "street": "Rua Rodrigo Augusto Cardoso",
-        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua Tucuruvi, 42 - Jardim Paulista 3, Indaiatuba - SP",
+        "street": "Rua Tucuruvi",
+        "neighborhood": "Jardim Paulista 3",
         "city": "Indaiatuba",
         "state": "SP",
         "condominium_name": null,
@@ -602,83 +746,70 @@
         "condominium_features": [],
         "latitude": null,
         "longitude": null,
-        "published_at": "2025-12-04T00:00:00Z",
-        "updated_at": "2026-10-03T00:00:00Z",
-        "photo_count": 7,
+        "published_at": "2025-07-23T00:00:00Z",
+        "updated_at": "2026-10-08T00:00:00Z",
+        "photo_count": 12,
         "has_existing_improvement": null,
         "built_area_m2": null
       },
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": true
       }
     },
     {
-      "listing_id": "2870866781",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-307m2-venda-RS495000-id-2870866781/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2832444434",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS235000-id-2832444434/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 495000,
-        "area_m2": 307,
-        "price_per_m2_brl": 1612.38,
+        "price_brl": 235000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1566.67,
         "condo_fee_displayed": null,
-        "condo_fee_brl": 420,
-        "condo_fee_exempt": false,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
         "iptu_displayed": null,
-        "iptu_brl": 200,
+        "iptu_brl": 80,
         "iptu_exempt": false,
-        "neighborhood": "Jardim Casablanca",
-        "address_displayed": "Estrada Municipal Chafic José Saif, 2451 - Jardim Casablanca, Indaiatuba - SP",
+        "neighborhood": "Jardim Bom Sucesso",
+        "address_displayed": "Avenida Luiz Bruno Petrilli, 14 - Jardim Bom Sucesso, Indaiatuba - SP",
         "city": "Indaiatuba",
         "state": "SP"
       },
       "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 307m² - Jardim Casablanca",
-        "description": "Terreno residencial à venda no exclusivo Condomínio Residencial Casa do Lago, em Indaiatuba! Este terreno plano está localizado na parte alta do condomínio, próximo à portaria. Oferece uma vista privilegiada para a área de preservação permanente, proporcionando um ambiente tranquilo e em contato com a natureza.",
-        "price_brl": 495000,
-        "area_m2": 307,
-        "condo_fee_brl": 420,
-        "condo_fee_exempt": null,
-        "iptu_brl": 200,
+        "title": "Lote/Terreno à venda, 150m² - Jardim Bom Sucesso",
+        "description": "Terreno à venda no Jardim Bom Sucesso Indaiatuba/SP. Excelente oportunidade para construir a casa dos seus sonhos ou investir em uma região em plena expansão!",
+        "price_brl": 235000,
+        "area_m2": 150,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_brl": 80,
         "iptu_exempt": null,
-        "address_displayed": "Estrada Municipal Chafic José Saif, 2451 - Jardim Casablanca, Indaiatuba - SP",
-        "street": "Estrada Municipal Chafic José Saif",
-        "neighborhood": "Jardim Casablanca",
+        "address_displayed": "Avenida Luiz Bruno Petrilli, 14 - Jardim Bom Sucesso, Indaiatuba - SP",
+        "street": "Avenida Luiz Bruno Petrilli",
+        "neighborhood": "Jardim Bom Sucesso",
         "city": "Indaiatuba",
         "state": "SP",
-        "condominium_name": "Condomínio Residencial Casa do Lago",
-        "advertiser": "Villa Imóveis Campinas",
-        "creci": "28329-J-SP",
+        "condominium_name": null,
+        "advertiser": "Gps Imóveis",
+        "creci": "19407-J-SP",
         "lot_dimensions": null,
         "frontage": null,
         "topography": null,
         "infrastructure": [
-          "área de lazer com academia",
-          "salão de festas",
-          "brinquedoteca",
-          "piscina",
-          "playground",
-          "churrascaria",
-          "quadra poliesportiva",
-          "quadra de tênis",
-          "beach tennis",
-          "espaço pet",
-          "campo de futebol society",
-          "Área Verde",
-          "Paisagismo",
-          "Jardins de temperos",
-          "praça de fogo",
-          "pista de caminhada",
-          "área de descanso"
+          "asfalto",
+          "água",
+          "esgoto",
+          "iluminação pública"
         ],
         "condominium_features": [],
         "latitude": null,
         "longitude": null,
-        "published_at": "2026-02-17T00:00:00Z",
-        "updated_at": "2026-10-30T00:00:00Z",
-        "photo_count": 11,
+        "published_at": "2025-08-30T00:00:00Z",
+        "updated_at": "2026-10-01T00:00:00Z",
+        "photo_count": 6,
         "has_existing_improvement": null,
         "built_area_m2": null
       },
@@ -689,9 +820,121 @@
       }
     },
     {
+      "listing_id": "2857573879",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS180000-id-2857573879/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 180000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1200.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_displayed": null,
+        "iptu_brl": 80,
+        "iptu_exempt": false,
+        "neighborhood": "Parque Barnabé",
+        "address_displayed": "Rua José Ramos, 40 - Parque Barnabé, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 150m² - Parque Barnabé",
+        "description": "Terreno de 150m² à venda no Jardim Smartcity em Indaiatuba, próximo ao novo Parque Ecológico do Buru e ao lado da praça do bairro com quadra de futebol, quadra de areia e parquinho.",
+        "price_brl": 180000,
+        "area_m2": 150,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": true,
+        "iptu_brl": 80,
+        "iptu_exempt": null,
+        "address_displayed": "Rua José Ramos, 40 - Parque Barnabé, Indaiatuba - SP",
+        "street": "Rua José Ramos",
+        "neighborhood": "Parque Barnabé",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": null,
+        "advertiser": "Ro.Ma Imóveis",
+        "creci": null,
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2025-12-09",
+        "updated_at": "2025-12-09",
+        "photo_count": 18,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": true
+      }
+    },
+    {
+      "listing_id": "2871686304",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-barcelona-bairros-indaiatuba-154m2-venda-RS250000-id-2871686304/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 250000,
+        "area_m2": 154,
+        "price_per_m2_brl": 1623.38,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": "Jardim Barcelona",
+        "address_displayed": "Rua Helenita Abrahão Farah Ferreira, s/n - Jardim Barcelona, Indaiatuba - SP",
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {
+        "title": "Lote/Terreno à venda, 154m² - Jardim Barcelona",
+        "description": "Terreno à venda no Jardim Barcelona, em Indaiatuba. Este excelente lote dispõe de 154 m² de área de terreno, apresentando topografia privilegiada e pronto para receber o seu projeto residencial ou comercial. Localizado em um bairro tranquilo e com expansão constante, o terreno oferece fácil acesso a serviços, comércios e principais vias da cidade. É uma oportunidade imperdível para quem busca investir em imóveis em Indaiatuba ou construir a casa dos seus sonhos em uma região valorizada. Agende a sua visita.",
+        "price_brl": 250000,
+        "area_m2": 154,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": null,
+        "iptu_brl": null,
+        "iptu_exempt": null,
+        "address_displayed": "Rua Helenita Abrahão Farah Ferreira, s/n - Jardim Barcelona, Indaiatuba - SP",
+        "street": "Rua Helenita Abrahão Farah Ferreira",
+        "neighborhood": "Jardim Barcelona",
+        "city": "Indaiatuba",
+        "state": "SP",
+        "condominium_name": null,
+        "advertiser": "Marcia Regina Pereira",
+        "creci": "65135-F-SP",
+        "lot_dimensions": null,
+        "frontage": null,
+        "topography": null,
+        "infrastructure": [],
+        "condominium_features": [],
+        "latitude": null,
+        "longitude": null,
+        "published_at": "2026-02-23T00:00:00Z",
+        "updated_at": "2026-10-23T00:00:00Z",
+        "photo_count": 4,
+        "has_existing_improvement": null,
+        "built_area_m2": null
+      },
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": true
+      }
+    },
+    {
       "listing_id": "2871686705",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-nucleo-residencial-professor-carlos-aldrovandi-bairros-indaiatuba-210m2-venda-RS290000-id-2871686705/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 290000,
@@ -739,76 +982,47 @@
         "built_area_m2": null
       },
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
         "status": "observed",
-        "enriched_this_run": true
+        "enriched_this_run": false
       }
     },
     {
-      "listing_id": "2871688296",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-150m2-venda-RS230000-id-2871688296/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2874592441",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-300m2-venda-RS450000-id-2874592441/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 230000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1533.33,
+        "price_brl": 450000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1500.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
         "iptu_displayed": null,
         "iptu_brl": null,
         "iptu_exempt": false,
-        "neighborhood": "Parque Campo Bonito",
-        "address_displayed": "Avenida Clóvis Ferraz de Camargo, s/n - Parque Campo Bonito, Indaiatuba - SP",
+        "neighborhood": null,
+        "address_displayed": null,
         "city": "Indaiatuba",
         "state": "SP"
       },
-      "firecrawl_enrichment": {
-        "title": "Lote/Terreno à venda, 150m² - Parque Campo Bonito",
-        "description": "PARQUE CAMPO BONITO - A/T: 150,00M² - ÓTIMO TERRENO, R$ 220.000,00.",
-        "price_brl": 230000,
-        "area_m2": 150,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": null,
-        "iptu_brl": null,
-        "iptu_exempt": null,
-        "address_displayed": "Avenida Clóvis Ferraz de Camargo, s/n - Parque Campo Bonito, Indaiatuba - SP",
-        "street": "Avenida Clóvis Ferraz de Camargo",
-        "neighborhood": "Parque Campo Bonito",
-        "city": "Indaiatuba",
-        "state": "SP",
-        "condominium_name": null,
-        "advertiser": "Marcia Regina Pereira",
-        "creci": "65135-F-SP",
-        "lot_dimensions": null,
-        "frontage": null,
-        "topography": null,
-        "infrastructure": [],
-        "condominium_features": [],
-        "latitude": null,
-        "longitude": null,
-        "published_at": "2026-02-23T00:00:00Z",
-        "updated_at": "2026-09-23T00:00:00Z",
-        "photo_count": 4,
-        "has_existing_improvement": null,
-        "built_area_m2": null
-      },
+      "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
-        "enriched_this_run": true
+        "enriched_this_run": false
       }
     },
     {
-      "listing_id": "2880154180",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2880154180/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2875730506",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-dos-colibris-bairros-indaiatuba-150m2-venda-RS212000-id-2875730506/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 280000,
+        "price_brl": 212000,
         "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
+        "price_per_m2_brl": 1413.33,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -830,7 +1044,7 @@
     {
       "listing_id": "2881467444",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS161120-id-2881467444/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 161120,
@@ -857,7 +1071,7 @@
     {
       "listing_id": "2888710596",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888710596/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
@@ -876,47 +1090,20 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": false
       }
     },
     {
-      "listing_id": "2888712408",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-regente-bairros-indaiatuba-346m2-venda-RS429000-id-2888712408/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2888711746",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-belvedere-bairros-indaiatuba-300m2-venda-RS390000-id-2888711746/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 429000,
-        "area_m2": 346,
-        "price_per_m2_brl": 1239.88,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2888713128",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-150m2-venda-RS373000-id-2888713128/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 373000,
-        "area_m2": 150,
-        "price_per_m2_brl": 2486.67,
+        "price_brl": 390000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1300.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -936,36 +1123,9 @@
       }
     },
     {
-      "listing_id": "2888713675",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888713675/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
       "listing_id": "2888713681",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-monte-carlo-bairros-indaiatuba-150m2-venda-RS273764-id-2888713681/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 273764,
@@ -984,7 +1144,7 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -992,7 +1152,7 @@
     {
       "listing_id": "2888713691",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888713691/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
@@ -1011,7 +1171,7 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -1019,7 +1179,7 @@
     {
       "listing_id": "2888713987",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888713987/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
@@ -1038,7 +1198,34 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2888713988",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2888713988/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -1046,7 +1233,7 @@
     {
       "listing_id": "2891967377",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS234000-id-2891967377/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 234000,
@@ -1071,171 +1258,9 @@
       }
     },
     {
-      "listing_id": "2894950773",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS165000-id-2894950773/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 165000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1100.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2896540177",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-regente-bairros-indaiatuba-345m2-venda-RS429000-id-2896540177/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 429000,
-        "area_m2": 345,
-        "price_per_m2_brl": 1243.48,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2896540398",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-149m2-venda-RS280000-id-2896540398/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 149,
-        "price_per_m2_brl": 1879.19,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2896621982",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS160000-id-2896621982/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 160000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1066.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2899422377",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-381m2-venda-RS483000-id-2899422377/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 483000,
-        "area_m2": 381,
-        "price_per_m2_brl": 1267.72,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2899764378",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-nucleo-residencial-professor-carlos-aldrovandi-bairros-indaiatuba-158m2-venda-RS210000-id-2899764378/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 210000,
-        "area_m2": 158,
-        "price_per_m2_brl": 1329.11,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900078787",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS850000-id-2900078787/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2893222593",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS850000-id-2893222593/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 850000,
@@ -1260,9 +1285,225 @@
       }
     },
     {
+      "listing_id": "2893988832",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-199m2-venda-RS362000-id-2893988832/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 362000,
+        "area_m2": 199,
+        "price_per_m2_brl": 1819.1,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2894950773",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS165000-id-2894950773/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 165000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1100.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2896538046",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2896538046/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2896540476",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2896540476/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2896540778",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-160m2-venda-RS210000-id-2896540778/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 210000,
+        "area_m2": 160,
+        "price_per_m2_brl": 1312.5,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2899422377",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-381m2-venda-RS483000-id-2899422377/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 483000,
+        "area_m2": 381,
+        "price_per_m2_brl": 1267.72,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900078284",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-alvorada-bairros-indaiatuba-302m2-venda-RS450000-id-2900078284/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 450000,
+        "area_m2": 302,
+        "price_per_m2_brl": 1490.07,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900078787",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS850000-id-2900078787/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 850000,
+        "area_m2": 1000,
+        "price_per_m2_brl": 850.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
       "listing_id": "2900475313",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bela-vista-bairros-indaiatuba-305m2-venda-RS390000-id-2900475313/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 390000,
@@ -1287,14 +1528,14 @@
       }
     },
     {
-      "listing_id": "2900477535",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-do-imperio-bairros-indaiatuba-150m2-venda-RS380000-id-2900477535/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2900478864",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-meraki-bairros-indaiatuba-342m2-venda-RS577947-id-2900478864/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 380000,
-        "area_m2": 150,
-        "price_per_m2_brl": 2533.33,
+        "price_brl": 577947,
+        "area_m2": 342,
+        "price_per_m2_brl": 1689.9,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -1308,7 +1549,7 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -1316,39 +1557,12 @@
     {
       "listing_id": "2900480316",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900480316/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
         "area_m2": 150,
         "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900480355",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-152m2-venda-RS219000-id-2900480355/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 219000,
-        "area_m2": 152,
-        "price_per_m2_brl": 1440.79,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -1368,14 +1582,14 @@
       }
     },
     {
-      "listing_id": "2900481239",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-159m2-venda-RS230000-id-2900481239/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2900480831",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-viena-bairros-indaiatuba-250m2-venda-RS400000-id-2900480831/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 230000,
-        "area_m2": 159,
-        "price_per_m2_brl": 1446.54,
+        "price_brl": 400000,
+        "area_m2": 250,
+        "price_per_m2_brl": 1600.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -1389,7 +1603,7 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -1397,7 +1611,7 @@
     {
       "listing_id": "2900481318",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900481318/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
@@ -1422,14 +1636,14 @@
       }
     },
     {
-      "listing_id": "2900481537",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS210000-id-2900481537/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2900482669",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900482669/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 210000,
+        "price_brl": 280000,
         "area_m2": 150,
-        "price_per_m2_brl": 1400.0,
+        "price_per_m2_brl": 1866.67,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -1444,60 +1658,6 @@
       "firecrawl_enrichment": {},
       "collector": {
         "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900481657",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-alvorada-bairros-indaiatuba-414m2-venda-RS586000-id-2900481657/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 586000,
-        "area_m2": 414,
-        "price_per_m2_brl": 1415.46,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/#main-content",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900482895",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-300m2-venda-RS400000-id-2900482895/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 400000,
-        "area_m2": 300,
-        "price_per_m2_brl": 1333.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -1505,61 +1665,7 @@
     {
       "listing_id": "2900483255",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900483255/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484159",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900484159/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484171",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900484171/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 280000,
@@ -1584,954 +1690,9 @@
       }
     },
     {
-      "listing_id": "2900484176",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-alvorada-bairros-indaiatuba-340m2-venda-RS480000-id-2900484176/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 480000,
-        "area_m2": 340,
-        "price_per_m2_brl": 1411.76,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484211",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS290000-id-2900484211/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 290000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1933.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484506",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-recanto-campestre-internacional-de-viracopos-gleba-6-bairros-indaiatuba-1000m2-venda-RS375000-id-2900484506/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 375000,
-        "area_m2": 1000,
-        "price_per_m2_brl": 375.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484743",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-150m2-venda-RS373000-id-2900484743/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 373000,
-        "area_m2": 150,
-        "price_per_m2_brl": 2486.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900484981",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900484981/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900485190",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS244000-id-2900485190/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 244000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1626.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900485555",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS230000-id-2900485555/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 230000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1533.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900485558",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900485558/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900485725",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS252000-id-2900485725/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 252000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1680.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486094",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-monte-carlo-bairros-indaiatuba-150m2-venda-RS273764-id-2900486094/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 273764,
-        "area_m2": 150,
-        "price_per_m2_brl": 1825.09,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486156",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-sabias-bairros-indaiatuba-162m2-venda-RS265000-id-2900486156/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 265000,
-        "area_m2": 162,
-        "price_per_m2_brl": 1635.8,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486277",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS170200-id-2900486277/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 170200,
-        "area_m2": 150,
-        "price_per_m2_brl": 1134.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486278",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900486278/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486507",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-maringa-bairros-indaiatuba-310m2-venda-RS450000-id-2900486507/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 450000,
-        "area_m2": 310,
-        "price_per_m2_brl": 1451.61,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486537",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-314m2-venda-RS480000-id-2900486537/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 480000,
-        "area_m2": 314,
-        "price_per_m2_brl": 1528.66,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900486647",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS260000-id-2900486647/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 260000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1733.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900487382",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS267500-id-2900487382/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 267500,
-        "area_m2": 150,
-        "price_per_m2_brl": 1783.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900487425",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-esplanada-bairros-indaiatuba-300m2-venda-RS510000-id-2900487425/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 510000,
-        "area_m2": 300,
-        "price_per_m2_brl": 1700.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900487532",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-europa-bairros-indaiatuba-250m2-venda-RS450000-id-2900487532/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 450000,
-        "area_m2": 250,
-        "price_per_m2_brl": 1800.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900487752",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-das-bandeiras-bairros-indaiatuba-com-garagem-1000m2-venda-RS700000-id-2900487752/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 700000,
-        "area_m2": 1000,
-        "price_per_m2_brl": 700.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900487778",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-monte-carlo-bairros-indaiatuba-150m2-venda-RS274000-id-2900487778/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 274000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1826.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900488761",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-beija-flor-bairros-indaiatuba-214m2-venda-RS280000-id-2900488761/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 214,
-        "price_per_m2_brl": 1308.41,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900489034",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-itaici-bairros-indaiatuba-928m2-venda-RS563000-id-2900489034/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 563000,
-        "area_m2": 928,
-        "price_per_m2_brl": 606.68,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900489883",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS260000-id-2900489883/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 260000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1733.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2900491389",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS200000-id-2900491389/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 200000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1333.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2901369020",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-207m2-venda-RS260000-id-2901369020/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 260000,
-        "area_m2": 207,
-        "price_per_m2_brl": 1256.04,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2902146506",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS228000-id-2902146506/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 228000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1520.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2902271312",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-green-view-village-bairros-indaiatuba-300m2-venda-RS435000-id-2902271312/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 435000,
-        "area_m2": 300,
-        "price_per_m2_brl": 1450.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2902272210",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS170000-id-2902272210/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 170000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1133.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2902746297",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-alvorada-bairros-indaiatuba-564m2-venda-RS599000-id-2902746297/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 599000,
-        "area_m2": 564,
-        "price_per_m2_brl": 1062.06,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2907835330",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS850000-id-2907835330/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 850000,
-        "area_m2": 1000,
-        "price_per_m2_brl": 850.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2909302760",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-residencial-milano-bairros-indaiatuba-300m2-venda-RS465000-id-2909302760/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 465000,
-        "area_m2": 300,
-        "price_per_m2_brl": 1550.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2909306541",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-sabias-bairros-indaiatuba-150m2-venda-RS270000-id-2909306541/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 270000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1800.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2912449474",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2912449474/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1866.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2913137624",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-alvorada-bairros-indaiatuba-150m2-venda-RS170000-id-2913137624/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 170000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1133.33,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2916838494",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS250000-id-2916838494/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2900483957",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS250000-id-2900483957/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 250000,
@@ -2556,9 +1717,1035 @@
       }
     },
     {
+      "listing_id": "2900484159",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900484159/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900484506",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-recanto-campestre-internacional-de-viracopos-gleba-6-bairros-indaiatuba-1000m2-venda-RS375000-id-2900484506/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 375000,
+        "area_m2": 1000,
+        "price_per_m2_brl": 375.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900484650",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-sabias-bairros-indaiatuba-150m2-venda-RS205000-id-2900484650/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 205000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1366.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900484945",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-150m2-venda-RS350000-id-2900484945/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 350000,
+        "area_m2": 150,
+        "price_per_m2_brl": 2333.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900485190",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS244000-id-2900485190/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 244000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1626.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900485279",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900485279/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900485304",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-300m2-venda-RS450000-id-2900485304/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 450000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1500.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900485725",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS252000-id-2900485725/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 252000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1680.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900486278",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2900486278/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900487308",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-nucleo-residencial-professor-carlos-aldrovandi-bairros-indaiatuba-158m2-venda-RS210000-id-2900487308/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 210000,
+        "area_m2": 158,
+        "price_per_m2_brl": 1329.11,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900487382",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS267500-id-2900487382/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 267500,
+        "area_m2": 150,
+        "price_per_m2_brl": 1783.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900487427",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-386m2-venda-RS600000-id-2900487427/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 600000,
+        "area_m2": 386,
+        "price_per_m2_brl": 1554.4,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900488761",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-beija-flor-bairros-indaiatuba-214m2-venda-RS280000-id-2900488761/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 214,
+        "price_per_m2_brl": 1308.41,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900489394",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-monte-carlo-bairros-indaiatuba-150m2-venda-RS275000-id-2900489394/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 275000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1833.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2900491389",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-150m2-venda-RS200000-id-2900491389/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 200000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1333.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2901206821",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-park-real-bairros-indaiatuba-150m2-venda-RS380000-id-2901206821/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 380000,
+        "area_m2": 150,
+        "price_per_m2_brl": 2533.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2901369020",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-207m2-venda-RS260000-id-2901369020/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 260000,
+        "area_m2": 207,
+        "price_per_m2_brl": 1256.04,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2902108440",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bela-vista-bairros-indaiatuba-305m2-venda-RS390000-id-2902108440/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 390000,
+        "area_m2": 305,
+        "price_per_m2_brl": 1278.69,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2902108936",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-150m2-venda-RS250000-id-2902108936/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 250000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1666.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2902109564",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-300m2-venda-RS450000-id-2902109564/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 450000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1500.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/#main-content",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2902112631",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-casablanca-bairros-indaiatuba-160m2-venda-RS210000-id-2902112631/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 210000,
+        "area_m2": 160,
+        "price_per_m2_brl": 1312.5,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2903376333",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-colinas-de-indaiatuba-bairros-indaiatuba-1121m2-venda-RS600000-id-2903376333/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 600000,
+        "area_m2": 1121,
+        "price_per_m2_brl": 535.24,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2903397505",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-monte-carlo-bairros-indaiatuba-150m2-venda-RS274000-id-2903397505/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 274000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1826.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2906794800",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-paulista-bairros-indaiatuba-150m2-venda-RS250000-id-2906794800/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 250000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1666.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2907835330",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS850000-id-2907835330/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 850000,
+        "area_m2": 1000,
+        "price_per_m2_brl": 850.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2907836016",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS800000-id-2907836016/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 800000,
+        "area_m2": 1000,
+        "price_per_m2_brl": 800.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2909302088",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-vila-rubens-bairros-indaiatuba-250m2-venda-RS339000-id-2909302088/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 339000,
+        "area_m2": 250,
+        "price_per_m2_brl": 1356.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2909305053",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardins-di-roma-bairros-indaiatuba-381m2-venda-RS480000-id-2909305053/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 480000,
+        "area_m2": 381,
+        "price_per_m2_brl": 1259.84,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2909307882",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS220000-id-2909307882/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 220000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1466.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2910982953",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-portal-das-acacias-bairros-indaiatuba-204m2-venda-RS385000-id-2910982953/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 385000,
+        "area_m2": 204,
+        "price_per_m2_brl": 1887.25,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2911920915",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-altos-da-bela-vista-bairros-indaiatuba-1270m2-venda-RS638000-id-2911920915/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 638000,
+        "area_m2": 1270,
+        "price_per_m2_brl": 502.36,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2911921722",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-157m2-venda-RS236000-id-2911921722/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 236000,
+        "area_m2": 157,
+        "price_per_m2_brl": 1503.18,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2912056259",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS243800-id-2912056259/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 243800,
+        "area_m2": 150,
+        "price_per_m2_brl": 1625.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2912447680",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2912447680/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2912455017",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-loteamento-residencial-vila-fahl-bairros-indaiatuba-150m2-venda-RS280000-id-2912455017/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 280000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1866.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2912947287",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-villa-sapezal-bairros-indaiatuba-360m2-venda-RS675000-id-2912947287/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 675000,
+        "area_m2": 360,
+        "price_per_m2_brl": 1875.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2913137624",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacaras-alvorada-bairros-indaiatuba-150m2-venda-RS170000-id-2913137624/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 170000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1133.33,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2915411699",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-residencial-indaia-bairros-indaiatuba-375m2-venda-RS585000-id-2915411699/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 585000,
+        "area_m2": 375,
+        "price_per_m2_brl": 1560.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
       "listing_id": "2916838776",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-laguna-bairros-indaiatuba-300m2-venda-RS430000-id-2916838776/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 430000,
@@ -2583,14 +2770,14 @@
       }
     },
     {
-      "listing_id": "2916839974",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-toscana-bairros-indaiatuba-190m2-venda-RS330000-id-2916839974/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2916840162",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-dona-maria-jose-bairros-indaiatuba-300m2-venda-RS480000-id-2916840162/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 330000,
-        "area_m2": 190,
-        "price_per_m2_brl": 1736.84,
+        "price_brl": 480000,
+        "area_m2": 300,
+        "price_per_m2_brl": 1600.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -2610,36 +2797,9 @@
       }
     },
     {
-      "listing_id": "2916840161",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-regina-bairros-indaiatuba-258m2-venda-RS450000-id-2916840161/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 450000,
-        "area_m2": 258,
-        "price_per_m2_brl": 1744.19,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
       "listing_id": "2916841140",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-belmonte-bairros-indaiatuba-300m2-venda-RS394000-id-2916841140/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 394000,
@@ -2658,61 +2818,34 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2916841149",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-morumbi-bairros-indaiatuba-360m2-venda-RS599400-id-2916841149/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 599400,
+        "area_m2": 360,
+        "price_per_m2_brl": 1665.0,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
         "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2916841234",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-residencial-nova-veneza-bairros-indaiatuba-150m2-venda-RS256000-id-2916841234/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 256000,
-        "area_m2": 150,
-        "price_per_m2_brl": 1706.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2916841337",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-campo-bonito-bairros-indaiatuba-150m2-venda-RS145000-id-2916841337/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 145000,
-        "area_m2": 150,
-        "price_per_m2_brl": 966.67,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -2720,7 +2853,7 @@
     {
       "listing_id": "2916904634",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS235000-id-2916904634/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 235000,
@@ -2745,14 +2878,14 @@
       }
     },
     {
-      "listing_id": "2917420954",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-chacara-areal-bairros-indaiatuba-150m2-venda-RS260062-id-2917420954/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2917466152",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-150m2-venda-RS240000-id-2917466152/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 260062,
+        "price_brl": 240000,
         "area_m2": 150,
-        "price_per_m2_brl": 1733.75,
+        "price_per_m2_brl": 1600.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -2772,122 +2905,14 @@
       }
     },
     {
-      "listing_id": "2917605236",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-quintas-da-terracota-bairros-indaiatuba-1240m2-venda-RS732100-id-2917605236/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 732100,
-        "area_m2": 1240,
-        "price_per_m2_brl": 590.4,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2917652653",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-europa-bairros-indaiatuba-250m2-venda-RS440000-id-2917652653/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 440000,
-        "area_m2": 250,
-        "price_per_m2_brl": 1760.0,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2917908116",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-portal-das-acacias-bairros-indaiatuba-130m2-venda-RS280000-id-2917908116/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 280000,
-        "area_m2": 130,
-        "price_per_m2_brl": 2153.85,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2918006933",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-toscana-bairros-indaiatuba-183m2-venda-RS320000-id-2918006933/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
-      "source_list_page": {
-        "price_displayed": null,
-        "price_brl": 320000,
-        "area_m2": 183,
-        "price_per_m2_brl": 1748.63,
-        "condo_fee_displayed": null,
-        "condo_fee_brl": null,
-        "condo_fee_exempt": false,
-        "iptu_displayed": null,
-        "iptu_brl": null,
-        "iptu_exempt": false,
-        "neighborhood": null,
-        "address_displayed": null,
-        "city": "Indaiatuba",
-        "state": "SP"
-      },
-      "firecrawl_enrichment": {},
-      "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
-        "status": "observed",
-        "enriched_this_run": false
-      }
-    },
-    {
-      "listing_id": "2918990240",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-villa-sapezal-bairros-indaiatuba-507m2-venda-RS700000-id-2918990240/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2917508746",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-indaiatuba-golf-bairros-indaiatuba-1000m2-venda-RS700000-id-2917508746/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 700000,
-        "area_m2": 507,
-        "price_per_m2_brl": 1380.67,
+        "area_m2": 1000,
+        "price_per_m2_brl": 700.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -2901,20 +2926,47 @@
       },
       "firecrawl_enrichment": {},
       "collector": {
-        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
         "status": "observed",
         "enriched_this_run": false
       }
     },
     {
-      "listing_id": "2919093874",
-      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-bom-sucesso-bairros-indaiatuba-154m2-venda-RS230000-id-2919093874/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "listing_id": "2918592985",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-recanto-campestre-viracopos-gleba-2-bairros-indaiatuba-1000m2-venda-RS338934-id-2918592985/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
-        "price_brl": 230000,
-        "area_m2": 154,
-        "price_per_m2_brl": 1493.51,
+        "price_brl": 338934,
+        "area_m2": 1000,
+        "price_per_m2_brl": 338.93,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=2",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2918935086",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-parque-barnabe-bairros-indaiatuba-150m2-venda-RS225000-id-2918935086/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 225000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1500.0,
         "condo_fee_displayed": null,
         "condo_fee_brl": null,
         "condo_fee_exempt": false,
@@ -2929,6 +2981,33 @@
       "firecrawl_enrichment": {},
       "collector": {
         "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial",
+        "status": "observed",
+        "enriched_this_run": false
+      }
+    },
+    {
+      "listing_id": "2919534014",
+      "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-jardim-das-araras-bairros-indaiatuba-150m2-venda-RS190000-id-2919534014/",
+      "collected_at": "2026-11-02T20:20:43+00:00",
+      "source_list_page": {
+        "price_displayed": null,
+        "price_brl": 190000,
+        "area_m2": 150,
+        "price_per_m2_brl": 1266.67,
+        "condo_fee_displayed": null,
+        "condo_fee_brl": null,
+        "condo_fee_exempt": false,
+        "iptu_displayed": null,
+        "iptu_brl": null,
+        "iptu_exempt": false,
+        "neighborhood": null,
+        "address_displayed": null,
+        "city": "Indaiatuba",
+        "state": "SP"
+      },
+      "firecrawl_enrichment": {},
+      "collector": {
+        "discovered_on": "https://www.vivareal.com.br/venda/sp/indaiatuba/lote-terreno_residencial/?onde=%2CS%C3%A3o+Paulo%2CIndaiatuba%2C%2C%2C%2C%2Ccity%2CBR%3ESao+Paulo%3ENULL%3EIndaiatuba%2C-23.088139%2C-47.208017%2C&tipos=lote-terreno_residencial&pagina=3",
         "status": "observed",
         "enriched_this_run": false
       }
@@ -2936,7 +3015,7 @@
     {
       "listing_id": "2919549346",
       "original_url": "https://www.vivareal.com.br/imovel/lote-terreno-residencial-london-park-bairros-indaiatuba-300m2-venda-RS470000-id-2919549346/",
-      "collected_at": "2026-10-29T16:55:15+00:00",
+      "collected_at": "2026-11-02T20:20:43+00:00",
       "source_list_page": {
         "price_displayed": null,
         "price_brl": 470000,
