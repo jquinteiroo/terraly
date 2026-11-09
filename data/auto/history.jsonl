@@ -8,3 +8,4 @@
 {"collected_at": "2026-10-29T16:55:15+00:00", "snapshot": "2026-10-29T165704Z.json", "record_count": 90, "new": 75, "changed": 8, "not_observed": 77, "enriched": 10}
 {"collected_at": "2026-11-02T20:20:43+00:00", "snapshot": "2026-11-02T202213Z.json", "record_count": 90, "new": 58, "changed": 0, "not_observed": 58, "enriched": 10}
 {"collected_at": "2026-11-05T17:59:42+00:00", "snapshot": "2026-11-05T180201Z.json", "record_count": 87, "new": 75, "changed": 0, "not_observed": 78, "enriched": 10}
+{"collected_at": "2026-11-09T20:42:11+00:00", "snapshot": "2026-11-09T204350Z.json", "record_count": 93, "new": 82, "changed": 2, "not_observed": 76, "enriched": 10}
