@@ -10,3 +10,4 @@
 {"collected_at": "2026-11-05T17:59:42+00:00", "snapshot": "2026-11-05T180201Z.json", "record_count": 87, "new": 75, "changed": 0, "not_observed": 78, "enriched": 10}
 {"collected_at": "2026-11-09T20:42:11+00:00", "snapshot": "2026-11-09T204350Z.json", "record_count": 93, "new": 82, "changed": 2, "not_observed": 76, "enriched": 10}
 {"collected_at": "2026-11-12T18:18:03+00:00", "snapshot": "2026-11-12T182011Z.json", "record_count": 94, "new": 85, "changed": 1, "not_observed": 84, "enriched": 10}
+{"collected_at": "2026-11-16T20:26:29+00:00", "snapshot": "2026-11-16T202847Z.json", "record_count": 112, "new": 100, "changed": 10, "not_observed": 82, "enriched": 10}
